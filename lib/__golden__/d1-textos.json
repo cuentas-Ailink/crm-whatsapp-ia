@@ -1,0 +1,12 @@
+{
+  "cabecera": "﻿Creado;Nombre;Teléfono;Perfil;Llegó por;Etapa;Zona;Email;Importe (€);Cobrado (€);Visita;Pendientes;Notas;Datos;Etiquetas;Resultado;Importe final;Motivo",
+  "csv": "﻿Creado;Nombre;Teléfono;Perfil;Llegó por;Etapa;Zona;Email;Importe (€);Cobrado (€);Visita;Pendientes;Notas;Datos;Etiquetas;Resultado;Importe final;Motivo\r\n03/11/2026, 11:15;Laura Martínez;+34612345678;Estudio de reformas;Tu web;Con visita;Gràcia;laura@ejemplo.es;6400;1000;jueves 5 nov a las 10:00;1;Quiere plato de ducha | Prefiere tardes;tipo: baño · metros: 6 · plazo: antes de Navidad;baño, financiación;;;\r\n04/11/2026, 11:15;Pol;+34698765432;Estudio de reformas;WhatsApp;Con tu asistente;;;;;;0;\"Dice \"\"urgente\"\"; mejor por la mañana\";;;;;\r\n",
+  "nombreEtapa": {
+    "conversacion": "En conversación",
+    "nuevo": "Nuevo",
+    "persona": "Pasado a persona",
+    "spam": "Spam",
+    "visita": "Visita reservada"
+  },
+  "plantilla": "Hola Laura, soy el asistente de Estudio de reformas. Acabamos de recibir tu solicitud. Para preparar bien la visita, ¿me cuentas en una frase qué te gustaría reformar?"
+}

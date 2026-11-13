@@ -1,0 +1,39 @@
+{
+  "name": "crm-whatsapp-ia",
+  "version": "1.0.0",
+  "description": "Contesta a tus clientes por WhatsApp en segundos, les da cita y te avisa cuando te toca a ti.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "4.0.92",
+    "@electric-sql/pglite": "0.5.10",
+    "@next/env": "16.4.3",
+    "@ngrok/ngrok": "1.7.0",
+    "ai": "7.0.157",
+    "lucide-react": "1.64.0",
+    "next": "16.4.3",
+    "postgres": "3.4.9",
+    "qrcode-generator": "2.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "5.0.5"
+  },
+  "packageManager": "pnpm@11.9.0"
+}

@@ -1,0 +1,6 @@
+# Los scripts se ejecutan en un Mac: siempre con finales de línea de Unix, aunque se editen en Windows.
+* text=auto eol=lf
+*.webp binary
+*.png binary
+*.jpg binary
+*.ogg binary

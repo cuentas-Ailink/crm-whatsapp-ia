@@ -1,0 +1,85 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# registros de arrancar.sh
+/logs/
+
+# env files: las claves solo en .env, nunca en el repositorio
+.env*
+!.env.example
+!.env.pruebas.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# la base de datos de antes de Supabase: tiene teléfonos y conversaciones reales
+*.db
+*.db-journal
+
+# el Postgres embebido de las pruebas
+/bd-pruebas/
+
+# la base de datos PGlite local
+/datos/
+# las copias diarias del modo servidor
+/copias/
+# los registros de las pruebas de punta a punta, en la raíz de cada worktree
+logs-*.txt
+# la instalación temporal de las pruebas del instalador
+/.prueba-instalador/
+
+# lo de cada instalación: el asistente activo (se crea desde perfiles/reformas.md) y sus guardados a medias
+agente.md
+agente.md.tmp-*
+# restos de bases de datos y exportaciones con datos de clientes
+*.db-wal
+*.db-shm
+*.sqlite*
+leads-*.csv
+# ajustes personales de Claude Code
+.claude/settings.local.json
+CLAUDE.local.md
+# los negocios propios no se publican; el ejemplo, sí
+negocios/*.json
+!negocios/ejemplo-peluqueria.json
+# fuera del repositorio público: la skill de programación, su candado y las notas de voz de prueba
+# (licencia desconocida; probar-claude.mjs se salta ese caso si no están)
+.agents/
+skills-lock.json
+scripts/audios/
+
+# el modo prueba: Baileys se instala aquí solo si se elige (no es parte del CRM)
+/.herramientas/

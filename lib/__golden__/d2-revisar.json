@@ -1,0 +1,154 @@
+{
+  "importesCitados": [
+    {
+      "entrada": "465.000 €",
+      "resultado": [
+        465000
+      ]
+    },
+    {
+      "entrada": "400 mil euros",
+      "resultado": [
+        400000
+      ]
+    },
+    {
+      "entrada": "1.200,50€",
+      "resultado": [
+        1200
+      ]
+    },
+    {
+      "entrada": "sin precio",
+      "resultado": []
+    }
+  ],
+  "motivoParaPersona": [
+    {
+      "entrada": {
+        "instrucciones": "reformas",
+        "texto": "Prefiero hablar con una persona"
+      },
+      "resultado": "Pide hablar con una persona"
+    },
+    {
+      "entrada": {
+        "instrucciones": "inmobiliaria",
+        "texto": "¿Me lo dejaríais en 400.000 €?"
+      },
+      "resultado": "Quiere negociar el precio"
+    },
+    {
+      "entrada": {
+        "instrucciones": "reformas",
+        "texto": "¿Me lo dejaríais en 400.000 €?"
+      },
+      "resultado": null
+    },
+    {
+      "entrada": {
+        "instrucciones": "reformas",
+        "texto": "Tengo que hablar con alguien de mi banco primero"
+      },
+      "resultado": null
+    }
+  ],
+  "revisarRespuesta": [
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Te propongo martes 3 nov a las 10:00 o miércoles 4 nov a las 17:00."
+      },
+      "resultado": null
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Hecho, martes a las 10:00."
+      },
+      "resultado": "Has confirmado una visita sin usar reservar_visita. Si el cliente ha elegido hueco, usa la herramienta antes de confirmar; si no, vuelve a ofrecerle los huecos."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": true,
+        "texto": "Hecho, martes a las 10:00."
+      },
+      "resultado": null
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Un compañero te escribe hoy mismo."
+      },
+      "resultado": "Has dicho que alguien del equipo le va a escribir sin usar pasar_a_persona, y así no se avisa a nadie. Usa la herramienta si toca pasarlo a una persona; si no, no lo prometas."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": true,
+        "reservo": false,
+        "texto": "Un compañero te escribe hoy mismo."
+      },
+      "resultado": null
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": true,
+        "texto": "Te escribimos el día antes para confirmar."
+      },
+      "resultado": "Has prometido un aviso para más adelante y nadie lo va a enviar. No prometas recordatorios ni mensajes: si necesita cambiar algo, que escriba por aquí."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Listo, la visita queda cancelada."
+      },
+      "resultado": "Has dicho que la visita queda cancelada sin usar cancelar_visita, así que sigue en la agenda. Si quiere otra hora, ofrece huecos y usa reservar_visita; si solo quiere anularla, usa cancelar_visita."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Son 6.400 € más o menos."
+      },
+      "resultado": "Has dado una cifra (6400 €) que no está en tus instrucciones ni la ha dicho el cliente. No inventes precios, rebajas ni presupuestos."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Te hacemos un 10 % de descuento."
+      },
+      "resultado": "Has hablado de un 10 % que nadie ha dicho. No ofrezcas descuentos ni condiciones: eso no lo decides tú."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Uso ver_huecos para mirarlo."
+      },
+      "resultado": "Has citado tus instrucciones o tus herramientas. Eso es interno y no se cuenta: contesta como lo haría alguien del equipo, sin explicar cómo funcionas por dentro."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "A las 9:15 te va bien?"
+      },
+      "resultado": "Has citado las 09:15, y esa hora no salió de ver_huecos. Ofrece solo los huecos que te devuelve la herramienta."
+    },
+    {
+      "entrada": {
+        "pasoAPersona": false,
+        "reservo": false,
+        "texto": "Perfecto, ¿cuántos metros tiene?"
+      },
+      "resultado": null
+    }
+  ]
+}

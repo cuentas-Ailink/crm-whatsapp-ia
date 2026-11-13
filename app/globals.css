@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+/* Tokens comunes de la web y del panel. */
+@theme {
+  --font-sans: var(--fuente-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--fuente-mono), ui-monospace, Menlo, monospace;
+
+  --color-tinta: #141414;
+  --color-secundario: #6b6b6b;
+  --color-fondo: #ecebe8;
+
+  /* Un color, un significado: verde = hecho, ámbar = te toca, rojo = algo falla, gris = nada que hacer. */
+  --color-ok: #2f9e6e;
+  --color-ok-texto: #23794f;
+  --color-atencion: #d9932f;
+  --color-atencion-texto: #a8661a;
+  --color-error: #e0584b;
+  --color-error-texto: #c23d30;
+  --color-nuevo: #a3a9b5;
+  --color-conversacion: #6b7a90;
+  --color-spam: #a8a39b;
+  --color-visita: var(--color-ok);
+  --color-persona: var(--color-atencion);
+  --color-marca: #2f9e6e;
+  --color-marca-texto: #0c2a1d;
+  --animate-escribiendo: escribiendo 1.2s ease-in-out infinite;
+  --animate-progreso: progreso 1.4s ease-in-out infinite;
+
+  /* Panel tipo CRM: el lienzo de trabajo y las líneas finas que separan. */
+  --color-lienzo: #f6f5f3;
+  --color-linea: #e3e2de;
+
+  --ease-salida: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Los tres puntos de «escribiendo…» (animate-escribiendo). */
+@keyframes escribiendo {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+/* La barra de «Preparando el modo prueba…» (animate-progreso): no se sabe cuánto falta. */
+@keyframes progreso {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Etiquetas pequeñas en mayúsculas, solo en DM Mono. */
+.etiqueta-mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* En un móvil, los tres enlaces y «Contacto» tienen que caber en la barra fija. */
+@media (max-width: 39.99rem) {
+  .enlaces-barra {
+    gap: 10px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* Tarjetas de cristal del panel. */
+.cristal {
+  background: rgba(255, 255, 255, 0.62);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* La barra fija de la portada al bajar: casi opaca, para leerse sobre cualquier sección. */
+.barra-portada {
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Tarjeta de cristal del formulario y de la conversación de ejemplo. */
+.cristal-formulario {
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 28px;
+}
+
+/* Las obras bajan en diagonal y el titular ocupa el hueco de arriba a la izquierda. */
+@media (min-width: 64rem) {
+  .obras {
+    --desfase: min(15vw, 240px);
+    padding-bottom: var(--desfase);
+  }
+
+  .obras > :nth-child(3n + 1) {
+    translate: 0 var(--desfase);
+  }
+
+  .obras > :nth-child(3n + 2) {
+    translate: 0 calc(var(--desfase) / 2);
+  }
+}
+
+.burbujas[data-estado="espera"] > li {
+  opacity: 0;
+}
+
+.burbujas[data-estado="visible"] > li {
+  animation: aparecer-burbuja 300ms var(--ease-salida) both;
+  animation-delay: calc(var(--orden) * 700ms);
+}
+
+@keyframes aparecer-burbuja {
+  from {
+    opacity: 0;
+    translate: 0 6px;
+  }
+}
+
+/* Nada de estilos por defecto del navegador al autocompletar. */
+.campo-formulario input:-webkit-autofill,
+.campo-formulario input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+  transition: background-color 9999s ease-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
+
+  .burbujas > li {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
+
+/* Las confirmaciones de «guardado» del panel entran desde abajo. */
+.confirmacion {
+  animation: aparecer-confirmacion 200ms var(--ease-salida) both;
+}
+
+@keyframes aparecer-confirmacion {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confirmacion {
+    animation: none;
+  }
+}
+
+/* En el móvil, iOS amplía la página al tocar un campo con letra de menos de 16 px. */
+@media (max-width: 1023.98px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* El menú del móvil baja desde la barra de arriba; con menos movimiento, aparece sin más. */
+.menu-movil {
+  animation: bajar-menu 180ms var(--ease-salida) both;
+}
+
+@keyframes bajar-menu {
+  from {
+    opacity: 0;
+    translate: 0 -8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-movil {
+    animation: none;
+  }
+}

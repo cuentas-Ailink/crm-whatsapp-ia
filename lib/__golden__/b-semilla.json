@@ -1,0 +1,5077 @@
+{
+  "leads": {
+    "34600021050:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600021050:ejemplo-1792698900000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792698900000
+        },
+        {
+          "id": "estado-34600021050:ejemplo-1792738200000",
+          "texto": "Estado: En conversación",
+          "ts": 1792738200000
+        },
+        {
+          "id": "estado-34600021050:ejemplo-1792738339492",
+          "texto": "Pasado a persona: Local de 120 m²: licencia de actividad",
+          "ts": 1792738339492
+        },
+        {
+          "id": "ficha-34600021050:ejemplo-1792738800000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792738800000
+        },
+        {
+          "id": "nota-34600021050-nota-1",
+          "texto": "Nota interna: Llamada hecha: restaurante, necesita proyecto de actividad …",
+          "ts": 1792770000000
+        },
+        {
+          "id": "etapa-34600021050:ejemplo-1792770943734",
+          "texto": "Devuelto a tu asistente",
+          "ts": 1792770943734
+        }
+      ],
+      "actualizadoEn": 1793007609212,
+      "cambioEstadoEn": 1792770943734,
+      "creadoEn": 1792698900000,
+      "datos": {
+        "metros": "120 m²",
+        "plazo": "lo antes posible",
+        "tipo": "Local comercial"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "local",
+        "licencia"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600021050:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Andrés, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792698900000
+        },
+        {
+          "de": "cliente",
+          "id": "34600021050-2",
+          "texto": "Buenos días. Tengo un local de 120 m² y quiero montar un restaurante",
+          "ts": 1792738200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-3",
+          "texto": "¡Buen proyecto, Andrés! ¿Para cuándo te gustaría empezar?",
+          "ts": 1792738208498
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600021050-4",
+          "texto": "Lo antes posible. Necesitaría también la licencia de actividad, no sé cómo va eso",
+          "ts": 1792738328802
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-5",
+          "texto": "Lo de la licencia lo lleva directamente el equipo, así que te paso con un compañero, que te escribe en cuanto pueda.",
+          "ts": 1792738339492
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-6",
+          "manual": true,
+          "texto": "Hola, Andrés, te escribo del estudio. Para un restaurante hace falta proyecto de actividad y salida de humos. ¿Te va bien que lo hablemos por teléfono esta tarde?",
+          "ts": 1792739656095
+        },
+        {
+          "de": "cliente",
+          "id": "34600021050-7",
+          "texto": "Sí, a partir de las 17:00",
+          "ts": 1792740730905
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-8",
+          "manual": true,
+          "texto": "Perfecto, hablamos a las 17:00.",
+          "ts": 1792741344346
+        },
+        {
+          "de": "cliente",
+          "id": "34600021050-9",
+          "texto": "Hola, lo he hablado con mi socio y seguimos adelante. ¿Qué tenemos que hacer ahora?",
+          "ts": 1793007600000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600021050-10",
+          "texto": "¡Qué bien! Cuando sepáis qué día podéis venir los dos al local, me lo dices por aquí y te propongo un par de huecos para verlo.",
+          "ts": 1793007609212
+        }
+      ],
+      "msPrimerWhatsApp": 4011,
+      "nombre": "Andrés Gómez",
+      "notas": [
+        {
+          "id": "34600021050-nota-1",
+          "texto": "Llamada hecha: restaurante, necesita proyecto de actividad y salida de humos.",
+          "ts": 1792770000000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600021050",
+      "zona": "Sants"
+    },
+    "34600036015:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600036015:ejemplo-1794334800000",
+          "texto": "Estado: En conversación",
+          "ts": 1794334800000
+        }
+      ],
+      "actualizadoEn": 1794336009000,
+      "cambioEstadoEn": 1794334800000,
+      "creadoEn": 1794334800000,
+      "datos": {
+        "metros": "85 m²",
+        "plazo": "lo antes posible",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-11T10:00",
+          "texto": "miércoles 11 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-13T17:00",
+          "texto": "viernes 13 nov a las 17:00"
+        }
+      ],
+      "id": "34600036015:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600036015-1",
+          "texto": "Buenas. Es un piso de 85 m² y queremos reformarlo entero",
+          "ts": 1794334800000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600036015-2",
+          "texto": "¡Buenas! Soy el asistente virtual de Estudio de reformas. ¿Para cuándo os gustaría empezar?",
+          "ts": 1794334808000
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600036015-3",
+          "texto": "Pues mira, lo antes posible, porque nos casamos en junio y querríamos entrar a vivir antes del verano. Tenemos los planos, por si os sirven.",
+          "ts": 1794336000000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600036015-4",
+          "texto": "¡Enhorabuena! Los planos enséñaselos al técnico en la visita. Para ver el piso os propongo el miércoles 11 nov a las 10:00 o el viernes 13 nov a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1794336009000
+        }
+      ],
+      "msPrimeraRespuesta": 8000,
+      "nombre": "Jordi Puig",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600036015"
+    },
+    "34600075562:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600075562:ejemplo-1792062900000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792062900000
+        },
+        {
+          "id": "estado-34600075562:ejemplo-1792062961303",
+          "texto": "Estado: En conversación",
+          "ts": 1792062961303
+        },
+        {
+          "id": "reserva-34600075562:ejemplo-1792063575219",
+          "texto": "Visita reservada: miércoles 21 oct a las 10:00",
+          "ts": 1792063575219
+        },
+        {
+          "id": "estado-34600075562:ejemplo-1792063575219",
+          "texto": "Estado: Visita reservada",
+          "ts": 1792063575219
+        },
+        {
+          "id": "ficha-34600075562:ejemplo-1792064864970",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792064864970
+        },
+        {
+          "id": "etapa-34600075562:ejemplo-1792574292848",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1792574292848
+        },
+        {
+          "id": "ficha-34600075562:ejemplo-1792748400000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1792748400000
+        },
+        {
+          "id": "nota-34600075562-nota-1",
+          "texto": "Nota interna: Presupuesto enviado el 23 oct",
+          "ts": 1792748460000
+        },
+        {
+          "id": "tarea-34600075562-tarea-1",
+          "texto": "Tarea añadida: Firmar contrato y pedir señal del 30 %",
+          "ts": 1793294121035
+        },
+        {
+          "id": "hecha-34600075562-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793353800000
+        },
+        {
+          "id": "cierre-34600075562:ejemplo-1793354400000",
+          "texto": "Ha dicho que sí · 10.460 €",
+          "ts": 1793354400000
+        },
+        {
+          "id": "ficha-34600075562:ejemplo-1793354993078",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793354993078
+        },
+        {
+          "id": "tarea-34600075562-tarea-2",
+          "texto": "Tarea añadida: Encargar la mampara a medida",
+          "ts": 1794222600000
+        }
+      ],
+      "actualizadoEn": 1794222600000,
+      "cambioEstadoEn": 1792574292848,
+      "cierre": "si",
+      "cierreEn": 1793354400000,
+      "cobrado": 3138,
+      "creadoEn": 1792062900000,
+      "datos": {
+        "metros": "6 m²",
+        "plazo": "antes de Navidad",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "baño",
+        "presupuesto aceptado"
+      ],
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-21T10:00",
+          "texto": "miércoles 21 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-22T17:00",
+          "texto": "jueves 22 oct a las 17:00"
+        }
+      ],
+      "id": "34600075562:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola David, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792062900000
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-2",
+          "texto": "Hola, buenas. Quería cambiar la bañera por un plato de ducha y renovar todo el baño",
+          "ts": 1792062961303
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-3",
+          "texto": "¡Hola, David! ¿Cuántos metros tiene el baño, más o menos?",
+          "ts": 1792062971890
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-4",
+          "texto": "Unos 6. ¿Y cuánto costaría, más o menos?",
+          "ts": 1792063158878
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-5",
+          "texto": "Sin verlo no te puedo dar una cifra fiable, porque depende de lo que haya debajo y de los acabados. ¿Para cuándo te gustaría hacerlo?",
+          "ts": 1792063164353
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-6",
+          "texto": "Antes de Navidad, si se puede",
+          "ts": 1792063239194
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-7",
+          "texto": "Entendido. Un técnico puede pasar a verlo el miércoles 21 oct a las 10:00 o el jueves 22 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1792063245711
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-8",
+          "texto": "El primero, perfecto",
+          "ts": 1792063566267
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-9",
+          "texto": "Hecho, visita reservada para el miércoles 21 oct a las 10:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1792063575219
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-10",
+          "texto": "¡Hola! Nos ha encajado el presupuesto. ¿Cuándo podríais empezar?",
+          "ts": 1793291400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600075562-11",
+          "manual": true,
+          "texto": "¡Genial, David! Te paso por email el contrato. Con la señal del 30 % reservamos la fecha de inicio.",
+          "ts": 1793292173420
+        },
+        {
+          "de": "cliente",
+          "id": "34600075562-12",
+          "texto": "Perfecto, lo miro esta noche",
+          "ts": 1793292740366
+        }
+      ],
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 2120,
+      "nombre": "David Ribas",
+      "notas": [
+        {
+          "id": "34600075562-nota-1",
+          "texto": "Presupuesto enviado el 23 oct",
+          "ts": 1792748460000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 10460,
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600075562-tarea-1",
+          "texto": "Firmar contrato y pedir señal del 30 %",
+          "ts": 1793294121035
+        },
+        {
+          "hecha": false,
+          "id": "34600075562-tarea-2",
+          "texto": "Encargar la mampara a medida",
+          "ts": 1794222600000,
+          "vence": "2026-11-13"
+        }
+      ],
+      "telefono": "34600075562",
+      "visita": {
+        "id": "2026-10-21T10:00",
+        "texto": "miércoles 21 oct a las 10:00"
+      },
+      "zona": "Eixample"
+    },
+    "34600076869:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600076869:ejemplo-1794222600000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794222600000
+        },
+        {
+          "id": "estado-34600076869:ejemplo-1794222660000",
+          "texto": "Estado: En conversación",
+          "ts": 1794222660000
+        },
+        {
+          "id": "estado-34600076869:ejemplo-1794222771000",
+          "texto": "Pasado a persona: Reforma con licencia de actividad",
+          "ts": 1794222771000
+        },
+        {
+          "id": "ficha-34600076869:ejemplo-1794223870114",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1794223870114
+        },
+        {
+          "id": "nota-34600076869-nota-1",
+          "texto": "Nota interna: Llamada hecha. Local de 80 m², antigua imprenta: cambio de …",
+          "ts": 1794242100000
+        },
+        {
+          "id": "tarea-34600076869-tarea-1",
+          "texto": "Tarea añadida: Llamar al arquitecto: proyecto de actividad",
+          "ts": 1794242160000
+        },
+        {
+          "id": "ficha-34600076869:ejemplo-1794242400000",
+          "texto": "Ficha editada: presupuesto",
+          "ts": 1794242400000
+        }
+      ],
+      "actualizadoEn": 1794242400000,
+      "cambioEstadoEn": 1794222771000,
+      "creadoEn": 1794222600000,
+      "datos": {
+        "metros": "80 m²",
+        "tipo": "Local comercial"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "local",
+        "licencia"
+      ],
+      "huecosOfrecidos": [],
+      "id": "34600076869:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600076869-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Marc, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794222600000
+        },
+        {
+          "de": "cliente",
+          "id": "34600076869-2",
+          "texto": "Tengo un local en Gràcia y quiero montar una cafetería",
+          "ts": 1794222660000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600076869-3",
+          "texto": "¡Buen proyecto, Marc! ¿Cuántos metros tiene el local, más o menos?",
+          "ts": 1794222667000
+        },
+        {
+          "de": "cliente",
+          "id": "34600076869-4",
+          "texto": "Unos 80. También necesito que me ayudéis con la licencia de actividad, que todavía no la he pedido",
+          "ts": 1794222762000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600076869-5",
+          "texto": "Lo de la licencia lo lleva directamente el equipo, así que te paso con un compañero, que te escribe en cuanto pueda.",
+          "ts": 1794222771000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600076869-6",
+          "manual": true,
+          "texto": "Hola, Marc, te escribo del estudio. Para una cafetería lo primero es la licencia y la salida de humos. ¿Te llamo esta tarde y lo vemos?",
+          "ts": 1794224400000
+        },
+        {
+          "de": "cliente",
+          "id": "34600076869-7",
+          "texto": "Sí, a partir de las 17:00",
+          "ts": 1794224640000
+        }
+      ],
+      "motivoPersona": "Reforma con licencia de actividad",
+      "msPrimerWhatsApp": 2073,
+      "nombre": "Marc Roca",
+      "notas": [
+        {
+          "id": "34600076869-nota-1",
+          "texto": "Llamada hecha. Local de 80 m², antigua imprenta: cambio de uso a restauración. Necesita proyecto de actividad y salida de humos.",
+          "ts": 1794242100000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 72000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600076869-tarea-1",
+          "texto": "Llamar al arquitecto: proyecto de actividad",
+          "ts": 1794242160000,
+          "vence": "2026-11-11"
+        }
+      ],
+      "telefono": "34600076869",
+      "zona": "Gràcia"
+    },
+    "34600096648:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600096648:ejemplo-1793736600000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793736600000
+        },
+        {
+          "id": "estado-34600096648:ejemplo-1793737023285",
+          "texto": "Estado: En conversación",
+          "ts": 1793737023285
+        },
+        {
+          "id": "estado-34600096648:ejemplo-1793737126021",
+          "texto": "Pasado a persona: Tabique que puede ser de carga",
+          "ts": 1793737126021
+        },
+        {
+          "id": "ficha-34600096648:ejemplo-1793779200000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793779200000
+        },
+        {
+          "id": "tarea-34600096648-tarea-1",
+          "texto": "Tarea añadida: Visita con el arquitecto para ver el tabique",
+          "ts": 1794326700000
+        }
+      ],
+      "actualizadoEn": 1794326700000,
+      "cambioEstadoEn": 1793737126021,
+      "creadoEn": 1793736600000,
+      "datos": {
+        "metros": "70 m²",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "vivienda entera"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600096648:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600096648-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Miquel, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793736600000
+        },
+        {
+          "de": "cliente",
+          "id": "34600096648-2",
+          "texto": "¡Hola! Queremos reformar el piso entero y abrir la cocina al salón",
+          "ts": 1793737023285
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600096648-3",
+          "texto": "¡Hola, Miquel! ¿Cuántos metros tiene el piso, más o menos?",
+          "ts": 1793737032273
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600096648-4",
+          "texto": "Unos 70. El vecino de arriba dice que la pared de la cocina es de carga, no sé si es verdad",
+          "ts": 1793737116039
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600096648-5",
+          "texto": "Gracias por avisar. Si puede ser un muro de carga, prefiero que lo vea directamente alguien del equipo: te paso con un compañero, que te escribe en cuanto pueda.",
+          "ts": 1793737126021
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600096648-6",
+          "manual": true,
+          "texto": "Hola, Miquel, he visto lo del tabique. Antes de decidir nada tiene que verlo el arquitecto. ¿Qué días te van bien?",
+          "ts": 1793779766418
+        },
+        {
+          "de": "cliente",
+          "id": "34600096648-7",
+          "texto": "Por las tardes, a partir de las 18:00",
+          "ts": 1793781189710
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600096648-8",
+          "manual": true,
+          "texto": "Perfecto. Lo cuadro con él y te digo el día.",
+          "ts": 1793781926749
+        }
+      ],
+      "motivoPersona": "Tabique que puede ser de carga",
+      "msPrimerWhatsApp": 1564,
+      "nombre": "Miquel Bosch",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600096648-tarea-1",
+          "texto": "Visita con el arquitecto para ver el tabique",
+          "ts": 1794326700000,
+          "vence": "2026-11-12"
+        }
+      ],
+      "telefono": "34600096648",
+      "zona": "Sants"
+    },
+    "34600107155:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600107155:ejemplo-1793693100000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793693100000
+        },
+        {
+          "id": "estado-34600107155:ejemplo-1793693165185",
+          "texto": "Estado: En conversación",
+          "ts": 1793693165185
+        },
+        {
+          "id": "reserva-34600107155:ejemplo-1793693744570",
+          "texto": "Visita reservada: martes 10 nov a las 12:30",
+          "ts": 1793693744570
+        },
+        {
+          "id": "estado-34600107155:ejemplo-1793693744570",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793693744570
+        },
+        {
+          "id": "ficha-34600107155:ejemplo-1793694511986",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793694511986
+        },
+        {
+          "id": "etapa-34600107155:ejemplo-1794323400000",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1794323400000
+        },
+        {
+          "id": "ficha-34600107155:ejemplo-1794329170847",
+          "texto": "Ficha editada: presupuesto",
+          "ts": 1794329170847
+        },
+        {
+          "id": "tarea-34600107155-tarea-1",
+          "texto": "Tarea añadida: Enviar presupuesto a Thomas",
+          "ts": 1794329666928
+        }
+      ],
+      "actualizadoEn": 1794329666928,
+      "cambioEstadoEn": 1794323400000,
+      "creadoEn": 1793693100000,
+      "datos": {
+        "metros": "7 m²",
+        "plazo": "después de Reyes",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "baño"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-09T12:30",
+          "texto": "lunes 9 nov a las 12:30"
+        },
+        {
+          "id": "2026-11-10T12:30",
+          "texto": "martes 10 nov a las 12:30"
+        }
+      ],
+      "id": "34600107155:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Thomas, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793693100000
+        },
+        {
+          "de": "cliente",
+          "id": "34600107155-2",
+          "texto": "¡Hola! Perdona mi español. Quiero reformar el baño principal",
+          "ts": 1793693165185
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-3",
+          "texto": "¡Hola, Thomas! Sin problema. ¿Cuántos metros tiene el baño, más o menos?",
+          "ts": 1793693176946
+        },
+        {
+          "de": "cliente",
+          "id": "34600107155-4",
+          "texto": "About 7 m². Siete metros",
+          "ts": 1793693371958
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-5",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793693382769
+        },
+        {
+          "de": "cliente",
+          "id": "34600107155-6",
+          "texto": "En enero, después de Reyes",
+          "ts": 1793693413667
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-7",
+          "texto": "Genial. Para verlo te propongo el lunes 9 nov a las 12:30 o el martes 10 nov a las 12:30. ¿Cuál te va mejor?",
+          "ts": 1793693422595
+        },
+        {
+          "de": "cliente",
+          "id": "34600107155-8",
+          "texto": "The second one, please. El segundo",
+          "ts": 1793693737206
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-9",
+          "texto": "Hecho, visita reservada para el martes 10 nov a las 12:30. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1793693744570
+        },
+        {
+          "de": "cliente",
+          "id": "34600107155-10",
+          "texto": "Thank you for the visit! ¿Me enviáis el presupuesto por email?",
+          "ts": 1794327600000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600107155-11",
+          "manual": true,
+          "texto": "¡Claro, Thomas! Te lo enviamos esta semana.",
+          "ts": 1794328432757
+        }
+      ],
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 2096,
+      "nombre": "Thomas Weber",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 12500,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600107155-tarea-1",
+          "texto": "Enviar presupuesto a Thomas",
+          "ts": 1794329666928,
+          "vence": "2026-11-13"
+        }
+      ],
+      "telefono": "34600107155",
+      "visita": {
+        "id": "2026-11-10T12:30",
+        "texto": "martes 10 nov a las 12:30"
+      },
+      "zona": "Sarrià"
+    },
+    "34600159384:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600159384:ejemplo-1791920400000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1791920400000
+        },
+        {
+          "id": "estado-34600159384:ejemplo-1791920537714",
+          "texto": "Estado: En conversación",
+          "ts": 1791920537714
+        },
+        {
+          "id": "reserva-34600159384:ejemplo-1791928781044",
+          "texto": "Visita reservada: viernes 16 oct a las 10:00",
+          "ts": 1791928781044
+        },
+        {
+          "id": "estado-34600159384:ejemplo-1791928781044",
+          "texto": "Estado: Visita reservada",
+          "ts": 1791928781044
+        },
+        {
+          "id": "ficha-34600159384:ejemplo-1791961200000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1791961200000
+        },
+        {
+          "id": "etapa-34600159384:ejemplo-1792142828073",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1792142828073
+        },
+        {
+          "id": "ficha-34600159384:ejemplo-1792491000000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1792491000000
+        },
+        {
+          "id": "nota-34600159384-nota-1",
+          "texto": "Nota interna: Presupuesto enviado el 20 oct",
+          "ts": 1792491060000
+        },
+        {
+          "id": "tarea-34600159384-tarea-1",
+          "texto": "Tarea añadida: Firmar contrato y pedir señal del 30 %",
+          "ts": 1793124779227
+        },
+        {
+          "id": "hecha-34600159384-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793265600000
+        },
+        {
+          "id": "cierre-34600159384:ejemplo-1793266200000",
+          "texto": "Ha dicho que sí · 18.640 €",
+          "ts": 1793266200000
+        },
+        {
+          "id": "ficha-34600159384:ejemplo-1793266858227",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793266858227
+        },
+        {
+          "id": "tarea-34600159384-tarea-2",
+          "texto": "Tarea añadida: Pedir el comunicat d'obres al Ajuntament",
+          "ts": 1794302400000
+        }
+      ],
+      "actualizadoEn": 1794302400000,
+      "cambioEstadoEn": 1792142828073,
+      "cierre": "si",
+      "cierreEn": 1793266200000,
+      "cobrado": 5592,
+      "creadoEn": 1791920400000,
+      "datos": {
+        "metros": "12 m²",
+        "plazo": "después de Reyes",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "cocina",
+        "presupuesto aceptado"
+      ],
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-16T10:00",
+          "texto": "viernes 16 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-19T17:00",
+          "texto": "lunes 19 oct a las 17:00"
+        }
+      ],
+      "id": "34600159384:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Cristina, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1791920400000
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-2",
+          "texto": "¡Hola! La cocina, que es de los años 80 y está fatal 😅",
+          "ts": 1791920537714
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-3",
+          "texto": "¡Hola, Cristina! Pues vamos a darle una vuelta 🙂 ¿Cuántos metros tiene, más o menos?",
+          "ts": 1791920549246
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-4",
+          "texto": "Unos 12, creo",
+          "ts": 1791920710136
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-5",
+          "texto": "Perfecto. ¿Y para cuándo te gustaría empezar?",
+          "ts": 1791920716271
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-6",
+          "texto": "Después de Reyes, si puede ser",
+          "ts": 1791920773744
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-7",
+          "texto": "Genial. Para verla en persona te propongo el viernes 16 oct a las 10:00 o el lunes 19 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1791920783040
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-8",
+          "texto": "El primero",
+          "ts": 1791928773642
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-9",
+          "texto": "Hecho, visita reservada para el viernes 16 oct a las 10:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1791928781044
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-10",
+          "texto": "Gracias por venir esta mañana. ¿Para cuándo tendríais el presupuesto?",
+          "ts": 1792167600000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-11",
+          "manual": true,
+          "texto": "¡Gracias a ti, Cristina! Te lo enviamos por email a principios de la semana que viene.",
+          "ts": 1792168489277
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-12",
+          "texto": "¡Hola! Lo hemos estado mirando y nos decidimos: lo hacemos con vosotros 😊 ¿Cómo hacemos la señal?",
+          "ts": 1793122200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600159384-13",
+          "manual": true,
+          "texto": "¡Qué buena noticia, Cristina! Te mando por email el contrato y la cuenta para la señal del 30 %.",
+          "ts": 1793122716711
+        },
+        {
+          "de": "cliente",
+          "id": "34600159384-14",
+          "texto": "¡Perfecto, gracias!",
+          "ts": 1793124110475
+        }
+      ],
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 1542,
+      "nombre": "Cristina Navarro",
+      "notas": [
+        {
+          "id": "34600159384-nota-1",
+          "texto": "Presupuesto enviado el 20 oct",
+          "ts": 1792491060000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 18640,
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600159384-tarea-1",
+          "texto": "Firmar contrato y pedir señal del 30 %",
+          "ts": 1793124779227
+        },
+        {
+          "hecha": false,
+          "id": "34600159384-tarea-2",
+          "texto": "Pedir el comunicat d'obres al Ajuntament",
+          "ts": 1794302400000,
+          "vence": "2026-11-18"
+        }
+      ],
+      "telefono": "34600159384",
+      "visita": {
+        "id": "2026-10-16T10:00",
+        "texto": "viernes 16 oct a las 10:00"
+      },
+      "zona": "Sarrià"
+    },
+    "34600185074:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600185074:ejemplo-1793239920000",
+          "texto": "Estado: En conversación",
+          "ts": 1793239920000
+        },
+        {
+          "id": "estado-34600185074:ejemplo-1793239926891",
+          "texto": "Marcado como spam: Intento de phishing",
+          "ts": 1793239926891
+        }
+      ],
+      "actualizadoEn": 1793239926891,
+      "cambioEstadoEn": 1793239926891,
+      "creadoEn": 1793239920000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "spam",
+      "huecosOfrecidos": [],
+      "id": "34600185074:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600185074-1",
+          "texto": "Tu cuenta de WhatsApp Business será suspendida en 24 h por incumplir las políticas. Verifica tus datos en el enlace.",
+          "ts": 1793239920000
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600185074-2",
+          "texto": "Hola. Soy el asistente virtual de Estudio de reformas. Gracias, pero lo que tenga que ver con la cuenta lo revisamos directamente en WhatsApp.",
+          "ts": 1793239926891
+        }
+      ],
+      "motivoSpam": "Intento de phishing",
+      "msPrimeraRespuesta": 6891,
+      "nombre": "Soporte Business",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600185074"
+    },
+    "34600192473:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600192473:ejemplo-1793218800000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793218800000
+        },
+        {
+          "id": "estado-34600192473:ejemplo-1793223876133",
+          "texto": "Estado: En conversación",
+          "ts": 1793223876133
+        },
+        {
+          "id": "reserva-34600192473:ejemplo-1793224743765",
+          "texto": "Visita reservada: martes 3 nov a las 10:00",
+          "ts": 1793224743765
+        },
+        {
+          "id": "estado-34600192473:ejemplo-1793224743765",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793224743765
+        },
+        {
+          "id": "ficha-34600192473:ejemplo-1793260800000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793260800000
+        },
+        {
+          "id": "etapa-34600192473:ejemplo-1793700674582",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1793700674582
+        },
+        {
+          "id": "ficha-34600192473:ejemplo-1793876400000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1793876400000
+        },
+        {
+          "id": "nota-34600192473-nota-1",
+          "texto": "Nota interna: Presupuesto enviado el 5 nov",
+          "ts": 1793876460000
+        },
+        {
+          "id": "cierre-34600192473:ejemplo-1793956800000",
+          "texto": "No sigue · Se lo ha pensado",
+          "ts": 1793956800000
+        },
+        {
+          "id": "volvio-34600192473:ejemplo-1793956800000",
+          "texto": "Ha vuelto a escribir",
+          "ts": 1794296400000
+        },
+        {
+          "id": "tarea-34600192473-tarea-1",
+          "texto": "Tarea añadida: Llamar a Xavier: obra por fases",
+          "ts": 1794298560000
+        },
+        {
+          "id": "nota-34600192473-nota-2",
+          "texto": "Nota interna: Quiere hacerlo por fases: primero cocina y baños.",
+          "ts": 1794298620000
+        }
+      ],
+      "actualizadoEn": 1794300000000,
+      "cambioEstadoEn": 1793700674582,
+      "cierre": "no",
+      "cierreEn": 1793956800000,
+      "creadoEn": 1793218800000,
+      "datos": {
+        "metros": "110 m²",
+        "plazo": "lo antes posible",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "vivienda entera",
+        "presupuesto enviado"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-03T10:00",
+          "texto": "martes 3 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-04T17:00",
+          "texto": "miércoles 4 nov a las 17:00"
+        }
+      ],
+      "id": "34600192473:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Xavier, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793218800000
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-2",
+          "texto": "¡Hola! Acabamos de comprar un piso y queremos reformarlo entero antes de entrar a vivir",
+          "ts": 1793223876133
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-3",
+          "texto": "¡Enhorabuena por el piso, Xavier! ¿Cuántos metros tiene, más o menos?",
+          "ts": 1793223884181
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-4",
+          "texto": "110, según la escritura",
+          "ts": 1793224220789
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-5",
+          "texto": "Perfecto. ¿Y para cuándo os gustaría empezar?",
+          "ts": 1793224226892
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600192473-6",
+          "texto": "Pues mira, nos dan las llaves a final de mes y ahora estamos de alquiler, así que cuanto antes mejor. La idea sería entrar a vivir antes del verano.",
+          "ts": 1793224464566
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-7",
+          "texto": "Entendido. Para ver el piso os propongo el martes 3 nov a las 10:00 o el miércoles 4 nov a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1793224470128
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-8",
+          "texto": "El primero, allí estaremos",
+          "ts": 1793224735717
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-9",
+          "texto": "Hecho, visita reservada para el martes 3 nov a las 10:00. Si preferís hablar con una persona, decídmelo por aquí.",
+          "ts": 1793224743765
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-10",
+          "texto": "Hola, hemos recibido el presupuesto. Es más de lo que esperábamos, lo tenemos que pensar",
+          "ts": 1793898600000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-11",
+          "manual": true,
+          "texto": "Claro, Xavier. Si queréis, lo repasamos juntos y vemos dónde se puede ajustar.",
+          "ts": 1793899311722
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-12",
+          "texto": "Gracias. Al final lo vamos a dejar por ahora, nos lo hemos repensado",
+          "ts": 1793955900000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-13",
+          "manual": true,
+          "texto": "Entendido, gracias por decírnoslo. Si en algún momento lo retomáis, aquí estamos.",
+          "ts": 1793956104814
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-14",
+          "texto": "¡Hola! ¿Y si lo hacemos por fases? Primero cocina y baños, y el resto más adelante",
+          "ts": 1794296400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600192473-15",
+          "manual": true,
+          "texto": "¡Hola, Xavier! Por fases se puede hacer, sí. ¿Te va bien que te llame mañana y lo vemos con el presupuesto delante?",
+          "ts": 1794298500000
+        },
+        {
+          "de": "cliente",
+          "id": "34600192473-16",
+          "texto": "Perfecto, mañana a partir de las 10 me va bien",
+          "ts": 1794300000000
+        }
+      ],
+      "motivoCierre": "Se lo ha pensado",
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 2302,
+      "nombre": "Xavier Gil",
+      "notas": [
+        {
+          "id": "34600192473-nota-1",
+          "texto": "Presupuesto enviado el 5 nov",
+          "ts": 1793876460000
+        },
+        {
+          "id": "34600192473-nota-2",
+          "texto": "Quiere hacerlo por fases: primero cocina y baños.",
+          "ts": 1794298620000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 129380,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600192473-tarea-1",
+          "texto": "Llamar a Xavier: obra por fases",
+          "ts": 1794298560000,
+          "vence": "2026-11-12"
+        }
+      ],
+      "telefono": "34600192473",
+      "visita": {
+        "id": "2026-11-03T10:00",
+        "texto": "martes 3 nov a las 10:00"
+      },
+      "vueltaVistaEn": 1794298440000,
+      "zona": "Sant Gervasi"
+    },
+    "34600209689:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600209689:ejemplo-1794170100000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794170100000
+        },
+        {
+          "id": "estado-34600209689:ejemplo-1794170637322",
+          "texto": "Estado: En conversación",
+          "ts": 1794170637322
+        },
+        {
+          "id": "reserva-34600209689:ejemplo-1794171021333",
+          "texto": "Visita reservada: jueves 12 nov a las 17:00",
+          "ts": 1794171021333
+        },
+        {
+          "id": "estado-34600209689:ejemplo-1794171021333",
+          "texto": "Estado: Visita reservada",
+          "ts": 1794171021333
+        },
+        {
+          "id": "ficha-34600209689:ejemplo-1794211200000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794211200000
+        },
+        {
+          "id": "tarea-34600209689-tarea-1",
+          "texto": "Tarea añadida: Llevar planos y medidor láser a la visita",
+          "ts": 1794211802534
+        }
+      ],
+      "actualizadoEn": 1794211802534,
+      "cambioEstadoEn": 1794171021333,
+      "creadoEn": 1794170100000,
+      "datos": {
+        "metros": "90 m²",
+        "plazo": "lo antes posible",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "vivienda entera",
+        "urgente"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-11T17:00",
+          "texto": "miércoles 11 nov a las 17:00"
+        },
+        {
+          "id": "2026-11-12T17:00",
+          "texto": "jueves 12 nov a las 17:00"
+        }
+      ],
+      "id": "34600209689:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600209689-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Albert, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794170100000
+        },
+        {
+          "de": "cliente",
+          "id": "34600209689-2",
+          "texto": "¡Hola! Hemos heredado el piso de mi abuela y queremos reformarlo entero para irnos a vivir",
+          "ts": 1794170637322
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600209689-3",
+          "texto": "¡Hola, Albert! ¿Cuántos metros tiene el piso, más o menos?",
+          "ts": 1794170649125
+        },
+        {
+          "de": "cliente",
+          "id": "34600209689-4",
+          "texto": "90 m², tres habitaciones. Está todo original de los 70",
+          "ts": 1794170688306
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600209689-5",
+          "texto": "Entendido. ¿Para cuándo os gustaría empezar?",
+          "ts": 1794170700195
+        },
+        {
+          "de": "cliente",
+          "id": "34600209689-6",
+          "texto": "Lo antes posible",
+          "ts": 1794170943350
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600209689-7",
+          "texto": "Perfecto. Para ver el piso os propongo el miércoles 11 nov a las 17:00 o el jueves 12 nov a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1794170952472
+        },
+        {
+          "de": "cliente",
+          "id": "34600209689-8",
+          "texto": "El segundo",
+          "ts": 1794171011432
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600209689-9",
+          "texto": "Hecho, visita reservada para el jueves 12 nov a las 17:00. Si preferís hablar con una persona, decídmelo por aquí.",
+          "ts": 1794171021333
+        }
+      ],
+      "msPrimerWhatsApp": 2039,
+      "nombre": "Albert Serra",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 98000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600209689-tarea-1",
+          "texto": "Llevar planos y medidor láser a la visita",
+          "ts": 1794211802534,
+          "vence": "2026-11-12"
+        }
+      ],
+      "telefono": "34600209689",
+      "visita": {
+        "id": "2026-11-12T17:00",
+        "texto": "jueves 12 nov a las 17:00"
+      },
+      "zona": "Eixample"
+    },
+    "34600227671:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600227671:ejemplo-1792351800000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792351800000
+        },
+        {
+          "id": "estado-34600227671:ejemplo-1792351848730",
+          "texto": "Estado: En conversación",
+          "ts": 1792351848730
+        },
+        {
+          "id": "reserva-34600227671:ejemplo-1792359325623",
+          "texto": "Visita reservada: miércoles 21 oct a las 17:00",
+          "ts": 1792359325623
+        },
+        {
+          "id": "estado-34600227671:ejemplo-1792359325623",
+          "texto": "Estado: Visita reservada",
+          "ts": 1792359325623
+        },
+        {
+          "id": "ficha-34600227671:ejemplo-1792393200000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792393200000
+        },
+        {
+          "id": "etapa-34600227671:ejemplo-1792599916997",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1792599916997
+        },
+        {
+          "id": "cierre-34600227671:ejemplo-1793102400610",
+          "texto": "No sigue · Precio",
+          "ts": 1793102400610
+        },
+        {
+          "id": "nota-34600227671-nota-1",
+          "texto": "Nota interna: Le pasamos 13.950 €: se le va de presupuesto.",
+          "ts": 1793102460610
+        }
+      ],
+      "actualizadoEn": 1793102460610,
+      "cambioEstadoEn": 1792599916997,
+      "cierre": "no",
+      "cierreEn": 1793102400610,
+      "creadoEn": 1792351800000,
+      "datos": {
+        "metros": "10 m²",
+        "plazo": "en primavera",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "cocina"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-20T17:00",
+          "texto": "martes 20 oct a las 17:00"
+        },
+        {
+          "id": "2026-10-21T17:00",
+          "texto": "miércoles 21 oct a las 17:00"
+        }
+      ],
+      "id": "34600227671:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Paula, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792351800000
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-2",
+          "texto": "¡Hola! Queremos cambiar la cocina entera, está muy vieja",
+          "ts": 1792351848730
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-3",
+          "texto": "¡Hola, Paula! ¿Cuántos metros tiene, más o menos?",
+          "ts": 1792351857637
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-4",
+          "texto": "Unos 10",
+          "ts": 1792352080894
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-5",
+          "texto": "Perfecto. ¿Para cuándo os gustaría empezar?",
+          "ts": 1792352092167
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-6",
+          "texto": "En primavera",
+          "ts": 1792359205305
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-7",
+          "texto": "Genial. Para verla os propongo el martes 20 oct a las 17:00 o el miércoles 21 oct a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1792359214904
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-8",
+          "texto": "El segundo, que ese día estamos los dos",
+          "ts": 1792359319841
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-9",
+          "texto": "Hecho, visita reservada para el miércoles 21 oct a las 17:00. Si preferís hablar con una persona, decídmelo por aquí.",
+          "ts": 1792359325623
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-10",
+          "texto": "¡Hola! Gracias por venir ayer. ¿Cuándo tendríamos el presupuesto?",
+          "ts": 1792668000000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-11",
+          "manual": true,
+          "texto": "¡Hola, Paula! Lo estamos terminando: te lo enviamos por email mañana.",
+          "ts": 1792668422924
+        },
+        {
+          "de": "cliente",
+          "id": "34600227671-12",
+          "texto": "Hola, gracias por el presupuesto. De momento lo dejamos, se nos va de lo que teníamos pensado.",
+          "ts": 1793101200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600227671-13",
+          "manual": true,
+          "texto": "Entendido, Paula, gracias por avisar. Si lo retomáis, aquí estamos.",
+          "ts": 1793101576507
+        }
+      ],
+      "motivoCierre": "Precio",
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 1850,
+      "nombre": "Paula Riera",
+      "notas": [
+        {
+          "id": "34600227671-nota-1",
+          "texto": "Le pasamos 13.950 €: se le va de presupuesto.",
+          "ts": 1793102460610
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600227671",
+      "visita": {
+        "id": "2026-10-21T17:00",
+        "texto": "miércoles 21 oct a las 17:00"
+      },
+      "zona": "Horta"
+    },
+    "34600244718:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600244718:ejemplo-1793647800000",
+          "texto": "Estado: En conversación",
+          "ts": 1793647800000
+        },
+        {
+          "id": "ficha-34600244718:ejemplo-1793692800000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793692800000
+        }
+      ],
+      "actualizadoEn": 1793692800000,
+      "cambioEstadoEn": 1793647800000,
+      "creadoEn": 1793647800000,
+      "datos": {
+        "metros": "9 m²",
+        "plazo": "antes de Navidad",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "cocina",
+        "antes de navidad"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-03T12:30",
+          "texto": "martes 3 nov a las 12:30"
+        },
+        {
+          "id": "2026-11-04T17:00",
+          "texto": "miércoles 4 nov a las 17:00"
+        }
+      ],
+      "id": "34600244718:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600244718-1",
+          "texto": "Buenas noches. Quiero cambiar la cocina, tiene unos 9 metros",
+          "ts": 1793647800000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600244718-2",
+          "texto": "¡Buenas noches! Soy el asistente virtual de Estudio de reformas. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793647806449
+        },
+        {
+          "de": "cliente",
+          "id": "34600244718-3",
+          "texto": "Antes de Navidad, si puede ser",
+          "ts": 1793657813939
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600244718-4",
+          "texto": "Perfecto. Para verla te propongo el martes 3 nov a las 12:30 o el miércoles 4 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1793657819932
+        }
+      ],
+      "msPrimeraRespuesta": 6449,
+      "nombre": "Jordi",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600244718"
+    },
+    "34600263443:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600263443:ejemplo-1793606100000",
+          "texto": "Estado: En conversación",
+          "ts": 1793606100000
+        },
+        {
+          "id": "estado-34600263443:ejemplo-1793606249914",
+          "texto": "Pasado a persona: Cliente con obra en curso (baño)",
+          "ts": 1793606249914
+        },
+        {
+          "id": "ficha-34600263443:ejemplo-1793607371669",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793607371669
+        },
+        {
+          "id": "tarea-34600263443-tarea-1",
+          "texto": "Tarea añadida: Confirmar fontanero mañana 9:00",
+          "ts": 1793610241167
+        },
+        {
+          "id": "cierre-34600263443:ejemplo-1793611434577",
+          "texto": "Ha dicho que sí · 11.800 €",
+          "ts": 1793611434577
+        },
+        {
+          "id": "ficha-34600263443:ejemplo-1793612908654",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793612908654
+        },
+        {
+          "id": "nota-34600263443-nota-1",
+          "texto": "Nota interna: Obra en curso: lleva pagado el 70 % (señal y pago a mitad d…",
+          "ts": 1793613469933
+        },
+        {
+          "id": "hecha-34600263443-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793694000000
+        },
+        {
+          "id": "tarea-34600263443-tarea-2",
+          "texto": "Tarea añadida: Revisar con Carmen los acabados del baño",
+          "ts": 1794235500000
+        }
+      ],
+      "actualizadoEn": 1794235500000,
+      "cambioEstadoEn": 1793606249914,
+      "cierre": "si",
+      "cierreEn": 1793611434577,
+      "cobrado": 8260,
+      "creadoEn": 1793606100000,
+      "datos": {
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "baño",
+        "presupuesto aceptado"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600263443:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600263443-1",
+          "texto": "Hola, buenos días. Soy Carmen, la del baño de la calle Provença",
+          "ts": 1793606100000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600263443-2",
+          "texto": "¡Buenos días, Carmen! Soy el asistente virtual de Estudio de reformas. ¿En qué te puedo ayudar?",
+          "ts": 1793606105059
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600263443-3",
+          "texto": "El fontanero tenía que venir esta mañana y no ha aparecido, y los albañiles están esperando para cerrar la pared.",
+          "ts": 1793606240758
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600263443-4",
+          "texto": "Vaya, lo siento. Esto lo lleva directamente el equipo: te paso con un compañero, que te escribe en cuanto pueda.",
+          "ts": 1793606249914
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600263443-5",
+          "manual": true,
+          "texto": "Hola, Carmen, perdona el lío. Acabo de hablar con el fontanero: mañana a las 9:00 está allí sin falta.",
+          "ts": 1793607776683
+        },
+        {
+          "de": "cliente",
+          "id": "34600263443-6",
+          "texto": "Vale, gracias. Y la factura del segundo pago, ¿me la mandáis por email?",
+          "ts": 1793608665177
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600263443-7",
+          "manual": true,
+          "texto": "Sí, hoy te la enviamos.",
+          "ts": 1793609172012
+        }
+      ],
+      "motivoPersona": "Cliente con obra en curso (baño)",
+      "msPrimeraRespuesta": 5059,
+      "nombre": "Carmen Ortiz",
+      "notas": [
+        {
+          "id": "34600263443-nota-1",
+          "texto": "Obra en curso: lleva pagado el 70 % (señal y pago a mitad de obra).",
+          "ts": 1793613469933
+        }
+      ],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 11800,
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600263443-tarea-1",
+          "texto": "Confirmar fontanero mañana 9:00",
+          "ts": 1793610241167
+        },
+        {
+          "hecha": false,
+          "id": "34600263443-tarea-2",
+          "texto": "Revisar con Carmen los acabados del baño",
+          "ts": 1794235500000,
+          "vence": "2026-11-16"
+        }
+      ],
+      "telefono": "34600263443"
+    },
+    "34600290496:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600290496:ejemplo-1794385500000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794385500000
+        }
+      ],
+      "actualizadoEn": 1794385500000,
+      "cambioEstadoEn": 1794385500000,
+      "creadoEn": 1794385500000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "nuevo",
+      "huecosOfrecidos": [],
+      "id": "34600290496:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600290496-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Pau, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794385500000
+        }
+      ],
+      "msPrimerWhatsApp": 2077,
+      "nombre": "Pau Ferrer",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600290496",
+      "zona": "Gràcia"
+    },
+    "34600376723:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600376723:ejemplo-1792517400000",
+          "texto": "Estado: En conversación",
+          "ts": 1792517400000
+        },
+        {
+          "id": "ficha-34600376723:ejemplo-1792566000000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792566000000
+        }
+      ],
+      "actualizadoEn": 1792566000000,
+      "cambioEstadoEn": 1792517400000,
+      "creadoEn": 1792517400000,
+      "datos": {
+        "tipo": "Plato de ducha"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "baño"
+      ],
+      "huecosOfrecidos": [],
+      "id": "34600376723:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600376723-1",
+          "texto": "Hola, buenas tardes. Quería información para cambiar la bañera por un plato de ducha",
+          "ts": 1792517400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600376723-2",
+          "texto": "¡Buenas tardes! Soy el asistente virtual de Estudio de reformas. Claro. ¿Para cuándo te gustaría hacerlo?",
+          "ts": 1792517411095
+        },
+        {
+          "de": "cliente",
+          "id": "34600376723-3",
+          "texto": "Es para más adelante, ahora solo estoy mirando",
+          "ts": 1792517738166
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600376723-4",
+          "texto": "Sin problema. Cuando quieras, me escribes por aquí y te propongo un par de días para verlo.",
+          "ts": 1792517745468
+        }
+      ],
+      "msPrimeraRespuesta": 11095,
+      "nombre": "Valentina Rojas",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600376723"
+    },
+    "34600391414:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600391414:ejemplo-1793004600000",
+          "texto": "Estado: En conversación",
+          "ts": 1793004600000
+        },
+        {
+          "id": "estado-34600391414:ejemplo-1793004711229",
+          "texto": "Pasado a persona: Pide hablar con una persona",
+          "ts": 1793004711229
+        },
+        {
+          "id": "ficha-34600391414:ejemplo-1793005220446",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793005220446
+        },
+        {
+          "id": "etapa-34600391414:ejemplo-1793007600000",
+          "texto": "Devuelto a tu asistente",
+          "ts": 1793007600000
+        }
+      ],
+      "actualizadoEn": 1793014206655,
+      "cambioEstadoEn": 1793007600000,
+      "creadoEn": 1793004600000,
+      "datos": {
+        "metros": "6 m²",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "baño"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-27T10:00",
+          "texto": "martes 27 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-28T17:00",
+          "texto": "miércoles 28 oct a las 17:00"
+        }
+      ],
+      "id": "34600391414:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600391414-1",
+          "texto": "Hola, quiero reformar el baño de mi casa",
+          "ts": 1793004600000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600391414-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. ¿Cuántos metros tiene el baño, más o menos?",
+          "ts": 1793004609292
+        },
+        {
+          "de": "cliente",
+          "id": "34600391414-3",
+          "texto": "Prefiero hablar con una persona, la verdad",
+          "ts": 1793004701108
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600391414-4",
+          "texto": "Claro, sin problema. Te paso con un compañero del equipo, que te escribe en cuanto pueda.",
+          "ts": 1793004711229
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600391414-5",
+          "manual": true,
+          "texto": "Hola, Bea, te escribo del estudio. ¿Te va bien que te llame ahora y me cuentas?",
+          "ts": 1793005822099
+        },
+        {
+          "de": "cliente",
+          "id": "34600391414-6",
+          "texto": "Sí, perfecto",
+          "ts": 1793006624244
+        },
+        {
+          "de": "cliente",
+          "id": "34600391414-7",
+          "texto": "¡Hola de nuevo! Me ha dicho tu compañero que por aquí me buscáis día para ver el baño. Son unos 6 m²",
+          "ts": 1793014200000
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600391414-8",
+          "texto": "¡Hola, Bea! Para verlo te propongo el martes 27 oct a las 10:00 o el miércoles 28 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1793014206655
+        }
+      ],
+      "msPrimeraRespuesta": 9292,
+      "nombre": "Bea",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600391414"
+    },
+    "34600445149:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600445149:ejemplo-1794346800000",
+          "texto": "Estado: En conversación",
+          "ts": 1794346800000
+        },
+        {
+          "id": "reserva-34600445149:ejemplo-1794381306358",
+          "texto": "Visita reservada: lunes 16 nov a las 10:00",
+          "ts": 1794381306358
+        },
+        {
+          "id": "estado-34600445149:ejemplo-1794381306358",
+          "texto": "Estado: Visita reservada",
+          "ts": 1794381306358
+        }
+      ],
+      "actualizadoEn": 1794381306358,
+      "cambioEstadoEn": 1794381306358,
+      "creadoEn": 1794346800000,
+      "datos": {
+        "metros": "5 m²",
+        "plazo": "en enero",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-16T10:00",
+          "texto": "lunes 16 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-16T12:30",
+          "texto": "lunes 16 nov a las 12:30"
+        }
+      ],
+      "id": "34600445149:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600445149-1",
+          "texto": "¡Hola! Quiero reformar el baño, unos 5 m². No tiene ventana y se llena de humedad",
+          "ts": 1794346800000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600445149-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Lo de la humedad lo mira el técnico en la visita. ¿Para cuándo te gustaría empezar?",
+          "ts": 1794346806557
+        },
+        {
+          "de": "cliente",
+          "id": "34600445149-3",
+          "texto": "En enero, si puede ser",
+          "ts": 1794381180000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600445149-4",
+          "texto": "Perfecto. Para verlo te propongo el jueves 12 nov a las 10:00 o el viernes 13 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1794381186289
+        },
+        {
+          "de": "cliente",
+          "id": "34600445149-5",
+          "texto": "Esos dos días trabajo fuera. ¿Podría ser el lunes 16 nov por la mañana?",
+          "ts": 1794381236289
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600445149-6",
+          "texto": "Sí, te propongo el lunes 16 nov a las 10:00 o el lunes 16 nov a las 12:30. ¿Cuál prefieres?",
+          "ts": 1794381244772
+        },
+        {
+          "de": "cliente",
+          "id": "34600445149-7",
+          "texto": "El de las 10:00, perfecto",
+          "ts": 1794381300000
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600445149-8",
+          "texto": "Hecho, visita reservada para el lunes 16 nov a las 10:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1794381306358
+        }
+      ],
+      "msPrimeraRespuesta": 6557,
+      "nombre": "Núria Vidal",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600445149",
+      "visita": {
+        "id": "2026-11-16T10:00",
+        "texto": "lunes 16 nov a las 10:00"
+      }
+    },
+    "34600457381:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600457381:ejemplo-1793861400000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793861400000
+        },
+        {
+          "id": "tarea-34600457381-tarea-1",
+          "texto": "Tarea añadida: Llamar: no contesta al WhatsApp",
+          "ts": 1793874600000
+        },
+        {
+          "id": "hecha-34600457381-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793955900000
+        },
+        {
+          "id": "tarea-34600457381-tarea-2",
+          "texto": "Tarea añadida: Volver a llamar: no contesta al WhatsApp",
+          "ts": 1794215100000
+        }
+      ],
+      "actualizadoEn": 1794215100000,
+      "cambioEstadoEn": 1793861400000,
+      "creadoEn": 1793861400000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "nuevo",
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600457381:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600457381-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Sergi, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793861400000
+        }
+      ],
+      "msPrimerWhatsApp": 1794,
+      "nombre": "Sergi Planas",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600457381-tarea-1",
+          "texto": "Llamar: no contesta al WhatsApp",
+          "ts": 1793874600000
+        },
+        {
+          "hecha": false,
+          "id": "34600457381-tarea-2",
+          "texto": "Volver a llamar: no contesta al WhatsApp",
+          "ts": 1794215100000,
+          "vence": "2026-11-10"
+        }
+      ],
+      "telefono": "34600457381",
+      "zona": "Sant Antoni"
+    },
+    "34600469280:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600469280:ejemplo-1792768800000",
+          "texto": "Estado: En conversación",
+          "ts": 1792768800000
+        },
+        {
+          "id": "silencio-34600469280:ejemplo-1792769174945",
+          "texto": "Ha pedido que no le escribamos",
+          "ts": 1792769174945
+        },
+        {
+          "id": "ficha-34600469280:ejemplo-1792770212789",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792770212789
+        }
+      ],
+      "actualizadoEn": 1792770212789,
+      "cambioEstadoEn": 1792768800000,
+      "creadoEn": 1792768800000,
+      "datos": {
+        "metros": "65 m²",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "vivienda entera"
+      ],
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-26T10:00",
+          "texto": "lunes 26 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-27T17:00",
+          "texto": "martes 27 oct a las 17:00"
+        }
+      ],
+      "id": "34600469280:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600469280-1",
+          "texto": "Hola, quería información para reformar un piso de 65 m²",
+          "ts": 1792768800000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600469280-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. ¿Para cuándo te gustaría empezar?",
+          "ts": 1792768811094
+        },
+        {
+          "de": "cliente",
+          "id": "34600469280-3",
+          "texto": "No lo sé todavía, estoy mirando opciones",
+          "ts": 1792768881643
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600469280-4",
+          "texto": "Sin problema. Para verlo te propongo el lunes 26 oct a las 10:00 o el martes 27 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1792768887856
+        },
+        {
+          "de": "cliente",
+          "id": "34600469280-5",
+          "texto": "No me escribáis más, gracias",
+          "ts": 1792769174945
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600469280-6",
+          "texto": "Entendido: no te escribiremos más por aquí. Si algún día lo necesitas, escríbenos y te atendemos.",
+          "ts": 1792769182287
+        }
+      ],
+      "msPrimeraRespuesta": 11094,
+      "nombre": "Óscar",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "silenciadoEn": 1792769174945,
+      "tareas": [],
+      "telefono": "34600469280"
+    },
+    "34600500157:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600500157:ejemplo-1792482000000",
+          "texto": "Estado: En conversación",
+          "ts": 1792482000000
+        },
+        {
+          "id": "ficha-34600500157:ejemplo-1792493509589",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792493509589
+        }
+      ],
+      "actualizadoEn": 1792493509589,
+      "cambioEstadoEn": 1792482000000,
+      "creadoEn": 1792482000000,
+      "datos": {
+        "metros": "70 m²",
+        "tipo": "Suelos"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "suelos"
+      ],
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-21T12:30",
+          "texto": "miércoles 21 oct a las 12:30"
+        },
+        {
+          "id": "2026-10-22T17:00",
+          "texto": "jueves 22 oct a las 17:00"
+        }
+      ],
+      "id": "34600500157:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600500157-1",
+          "texto": "Buenas, ¿cuánto cuesta cambiar el suelo de un piso de 70 metros?",
+          "ts": 1792482000000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600500157-2",
+          "texto": "¡Buenas! Soy el asistente virtual de Estudio de reformas. Sin verlo no te puedo dar una cifra fiable, porque depende del suelo que haya ahora y del material. ¿Para cuándo te gustaría hacerlo?",
+          "ts": 1792482011945
+        },
+        {
+          "de": "cliente",
+          "id": "34600500157-3",
+          "texto": "Pero aproximado, una horquilla",
+          "ts": 1792482242687
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600500157-4",
+          "texto": "Te entiendo, pero cualquier cifra sin verlo podría no parecerse al presupuesto real. Para verlo te propongo el miércoles 21 oct a las 12:30 o el jueves 22 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1792482250316
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600500157-5",
+          "texto": "Ya, es que estoy pidiendo varios presupuestos y no quiero hacer venir a todo el mundo",
+          "ts": 1792492622923
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600500157-6",
+          "texto": "Lo entiendo perfectamente. Si te decides, me dices por aquí y te busco hueco.",
+          "ts": 1792492633918
+        }
+      ],
+      "msPrimeraRespuesta": 11945,
+      "nombre": "Edu",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600500157"
+    },
+    "34600517699:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600517699:ejemplo-1794048000000",
+          "texto": "Estado: En conversación",
+          "ts": 1794048000000
+        },
+        {
+          "id": "reserva-34600517699:ejemplo-1794048334075",
+          "texto": "Visita reservada: martes 17 nov a las 17:00",
+          "ts": 1794048334075
+        },
+        {
+          "id": "estado-34600517699:ejemplo-1794048334075",
+          "texto": "Estado: Visita reservada",
+          "ts": 1794048334075
+        },
+        {
+          "id": "ficha-34600517699:ejemplo-1794211200000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794211200000
+        },
+        {
+          "id": "tarea-34600517699-tarea-1",
+          "texto": "Tarea añadida: Llevar catálogo de platos de ducha",
+          "ts": 1794313200000
+        }
+      ],
+      "actualizadoEn": 1794313200000,
+      "cambioEstadoEn": 1794048334075,
+      "creadoEn": 1794048000000,
+      "datos": {
+        "metros": "6 m²",
+        "plazo": "en enero",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "baño"
+      ],
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-16T12:30",
+          "texto": "lunes 16 nov a las 12:30"
+        },
+        {
+          "id": "2026-11-17T17:00",
+          "texto": "martes 17 nov a las 17:00"
+        }
+      ],
+      "id": "34600517699:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600517699-1",
+          "texto": "¡Hola! ¿Me pasáis información para reformar un baño?",
+          "ts": 1794048000000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600517699-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Claro. ¿Cuántos metros tiene el baño, más o menos?",
+          "ts": 1794048011640
+        },
+        {
+          "de": "cliente",
+          "id": "34600517699-3",
+          "texto": "Unos 6. Quiero quitar la bañera y poner un plato de ducha grande",
+          "ts": 1794048121004
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600517699-4",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1794048132668
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600517699-5",
+          "texto": "Pues mira, lo ideal sería en enero, que en diciembre tenemos a toda la familia en casa y no quiero estar de obras",
+          "ts": 1794048243329
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600517699-6",
+          "texto": "Normal. Para verlo te propongo el lunes 16 nov a las 12:30 o el martes 17 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1794048252729
+        },
+        {
+          "de": "cliente",
+          "id": "34600517699-7",
+          "texto": "El segundo, por la tarde me va mejor",
+          "ts": 1794048326644
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600517699-8",
+          "texto": "Hecho, visita reservada para el martes 17 nov a las 17:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1794048334075
+        }
+      ],
+      "msPrimeraRespuesta": 11640,
+      "nombre": "Sílvia Mas",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 11000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600517699-tarea-1",
+          "texto": "Llevar catálogo de platos de ducha",
+          "ts": 1794313200000,
+          "vence": "2026-11-17"
+        }
+      ],
+      "telefono": "34600517699",
+      "visita": {
+        "id": "2026-11-17T17:00",
+        "texto": "martes 17 nov a las 17:00"
+      }
+    },
+    "34600619255:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600619255:ejemplo-1793295900000",
+          "texto": "Estado: En conversación",
+          "ts": 1793295900000
+        },
+        {
+          "id": "ficha-34600619255:ejemplo-1793297267586",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793297267586
+        }
+      ],
+      "actualizadoEn": 1793297267586,
+      "cambioEstadoEn": 1793295900000,
+      "creadoEn": 1793295900000,
+      "datos": {
+        "metros": "25 m²",
+        "plazo": "en primavera",
+        "tipo": "Terraza"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "terraza"
+      ],
+      "huecosOfrecidos": [],
+      "id": "34600619255:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600619255-1",
+          "texto": "¡Hola! Queremos arreglar la terraza y poner una pérgola. Son unos 25 m²",
+          "ts": 1793295900000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600619255-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. ¿Para cuándo os gustaría empezar?",
+          "ts": 1793295906674
+        },
+        {
+          "de": "cliente",
+          "id": "34600619255-3",
+          "texto": "Es para más adelante, en primavera. Ahora solo estamos mirando",
+          "ts": 1793295979776
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600619255-4",
+          "texto": "Perfecto. Cuando queráis, me escribís por aquí y os propongo un par de días para verla.",
+          "ts": 1793295985955
+        }
+      ],
+      "msPrimeraRespuesta": 6674,
+      "nombre": "Noelia Prat",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600619255"
+    },
+    "34600626234:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600626234:ejemplo-1794343620000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794343620000
+        },
+        {
+          "id": "estado-34600626234:ejemplo-1794344280000",
+          "texto": "Estado: En conversación",
+          "ts": 1794344280000
+        }
+      ],
+      "actualizadoEn": 1794383231358,
+      "cambioEstadoEn": 1794344280000,
+      "creadoEn": 1794343620000,
+      "datos": {
+        "metros": "12 m²",
+        "plazo": "en enero",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-11T10:00",
+          "texto": "miércoles 11 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-13T17:00",
+          "texto": "viernes 13 nov a las 17:00"
+        }
+      ],
+      "id": "34600626234:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600626234-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Laura, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794343620000
+        },
+        {
+          "de": "cliente",
+          "id": "34600626234-2",
+          "texto": "¡Hola! Quiero reformar la cocina entera, son unos 12 m²",
+          "ts": 1794344280000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600626234-3",
+          "texto": "¡Genial, Laura! ¿Para cuándo te gustaría empezar?",
+          "ts": 1794344285479
+        },
+        {
+          "de": "cliente",
+          "id": "34600626234-4",
+          "texto": "En enero. Me encanta el cuarzo para la encimera",
+          "ts": 1794344580000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600626234-5",
+          "texto": "¡Buena elección! Para verla te propongo el miércoles 11 nov a las 10:00 o el viernes 13 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1794344590781
+        },
+        {
+          "de": "cliente",
+          "id": "34600626234-6",
+          "texto": "Perdona, ayer me dormí. ¿Se puede pagar en dos plazos?",
+          "ts": 1794383220000
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600626234-7",
+          "texto": "La forma de pago la ves con el equipo junto con el presupuesto, después de la visita. ¿Te va bien alguno de los dos días que te propuse?",
+          "ts": 1794383231358
+        }
+      ],
+      "msPrimerWhatsApp": 2073,
+      "nombre": "Laura Martínez",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600626234",
+      "zona": "Eixample"
+    },
+    "34600678708:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600678708:ejemplo-1791966000000",
+          "texto": "Estado: En conversación",
+          "ts": 1791966000000
+        },
+        {
+          "id": "ficha-34600678708:ejemplo-1791967001283",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1791967001283
+        }
+      ],
+      "actualizadoEn": 1791967001283,
+      "cambioEstadoEn": 1791966000000,
+      "creadoEn": 1791966000000,
+      "datos": {
+        "metros": "5 m²",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "baño"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600678708:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600678708-1",
+          "texto": "Hola, quería pedir presupuesto para reformar el baño",
+          "ts": 1791966000000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600678708-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. ¿Cuántos metros tiene el baño, más o menos?",
+          "ts": 1791966008087
+        },
+        {
+          "de": "cliente",
+          "id": "34600678708-3",
+          "texto": "Unos 5. ¿Más o menos cuánto me puede salir?",
+          "ts": 1791966220228
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600678708-4",
+          "texto": "Sin verlo no te puedo dar una cifra fiable: depende de lo que haya debajo y de los acabados. ¿Para cuándo te gustaría hacerlo?",
+          "ts": 1791966231189
+        }
+      ],
+      "msPrimeraRespuesta": 8087,
+      "nombre": "Toni Ruiz",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600678708"
+    },
+    "34600693761:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600693761:ejemplo-1791921900000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1791921900000
+        },
+        {
+          "id": "tarea-34600693761-tarea-1",
+          "texto": "Tarea añadida: Llamar: no contesta al WhatsApp",
+          "ts": 1791965400000
+        },
+        {
+          "id": "hecha-34600693761-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1792060200000
+        }
+      ],
+      "actualizadoEn": 1792060200000,
+      "cambioEstadoEn": 1791921900000,
+      "creadoEn": 1791921900000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "nuevo",
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600693761:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600693761-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Laia, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1791921900000
+        }
+      ],
+      "msPrimerWhatsApp": 1784,
+      "nombre": "Laia Soler",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600693761-tarea-1",
+          "texto": "Llamar: no contesta al WhatsApp",
+          "ts": 1791965400000
+        }
+      ],
+      "telefono": "34600693761",
+      "zona": "Poble-sec"
+    },
+    "34600696521:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600696521:ejemplo-1793102700000",
+          "texto": "Estado: En conversación",
+          "ts": 1793102700000
+        },
+        {
+          "id": "ficha-34600696521:ejemplo-1793103412501",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793103412501
+        }
+      ],
+      "actualizadoEn": 1793103412501,
+      "cambioEstadoEn": 1793102700000,
+      "creadoEn": 1793102700000,
+      "datos": {
+        "metros": "90 m²",
+        "tipo": "Suelos"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "suelos"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600696521:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600696521-1",
+          "texto": "¡Hola! Quiero cambiar el parquet de todo el piso, está destrozado por el perro 😅",
+          "ts": 1793102700000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600696521-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Pasa más de lo que parece. ¿Cuántos metros son, más o menos?",
+          "ts": 1793102706371
+        },
+        {
+          "de": "cliente",
+          "id": "34600696521-3",
+          "texto": "Unos 90",
+          "ts": 1793102788021
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600696521-4",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793102797843
+        }
+      ],
+      "msPrimeraRespuesta": 6371,
+      "nombre": "Marc Valls",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600696521"
+    },
+    "34600713054:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600713054:ejemplo-1794174600000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794174600000
+        },
+        {
+          "id": "estado-34600713054:ejemplo-1794208140000",
+          "texto": "Estado: En conversación",
+          "ts": 1794208140000
+        },
+        {
+          "id": "reserva-34600713054:ejemplo-1794213415938",
+          "texto": "Visita reservada: martes 17 nov a las 10:00",
+          "ts": 1794213415938
+        },
+        {
+          "id": "estado-34600713054:ejemplo-1794213415938",
+          "texto": "Estado: Visita reservada",
+          "ts": 1794213415938
+        },
+        {
+          "id": "ficha-34600713054:ejemplo-1794219881404",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794219881404
+        },
+        {
+          "id": "tarea-34600713054-tarea-1",
+          "texto": "Tarea añadida: Llevar muestras de encimera a la visita",
+          "ts": 1794221213327
+        }
+      ],
+      "actualizadoEn": 1794221213327,
+      "cambioEstadoEn": 1794213415938,
+      "creadoEn": 1794174600000,
+      "datos": {
+        "metros": "11 m²",
+        "plazo": "en febrero",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "cocina"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-17T10:00",
+          "texto": "martes 17 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-18T17:00",
+          "texto": "miércoles 18 nov a las 17:00"
+        }
+      ],
+      "id": "34600713054:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600713054-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Giulia, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794174600000
+        },
+        {
+          "de": "cliente",
+          "id": "34600713054-2",
+          "texto": "Buongiorno! Perdón, ¡buenos días! 😅 Quiero cambiar la cocina, tiene 11 m²",
+          "ts": 1794208140000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600713054-3",
+          "texto": "¡Buenos días, Giulia! ¿Para cuándo te gustaría empezar?",
+          "ts": 1794208147931
+        },
+        {
+          "de": "cliente",
+          "id": "34600713054-4",
+          "texto": "En febrero o marzo",
+          "ts": 1794213097655
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600713054-5",
+          "texto": "Perfecto. Para verla te propongo el martes 17 nov a las 10:00 o el miércoles 18 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1794213103078
+        },
+        {
+          "de": "cliente",
+          "id": "34600713054-6",
+          "texto": "El primero",
+          "ts": 1794213404395
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600713054-7",
+          "texto": "Hecho, visita reservada para el martes 17 nov a las 10:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1794213415938
+        },
+        {
+          "de": "cliente",
+          "id": "34600713054-8",
+          "texto": "Grazie! ¡Gracias!",
+          "ts": 1794219454315
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600713054-9",
+          "texto": "¡A ti! Cualquier cosa, me dices por aquí.",
+          "ts": 1794219462738
+        }
+      ],
+      "msPrimerWhatsApp": 2044,
+      "nombre": "Giulia Ricci",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 14500,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600713054-tarea-1",
+          "texto": "Llevar muestras de encimera a la visita",
+          "ts": 1794221213327,
+          "vence": "2026-11-17"
+        }
+      ],
+      "telefono": "34600713054",
+      "visita": {
+        "id": "2026-11-17T10:00",
+        "texto": "martes 17 nov a las 10:00"
+      },
+      "zona": "Gràcia"
+    },
+    "34600719270:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600719270:ejemplo-1794251700000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1794251700000
+        },
+        {
+          "id": "estado-34600719270:ejemplo-1794252660000",
+          "texto": "Estado: En conversación",
+          "ts": 1794252660000
+        },
+        {
+          "id": "reserva-34600719270:ejemplo-1794298492625",
+          "texto": "Visita reservada: viernes 13 nov a las 12:30",
+          "ts": 1794298492625
+        },
+        {
+          "id": "estado-34600719270:ejemplo-1794298492625",
+          "texto": "Estado: Visita reservada",
+          "ts": 1794298492625
+        },
+        {
+          "id": "ficha-34600719270:ejemplo-1794299340073",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794299340073
+        },
+        {
+          "id": "nota-34600719270-nota-1",
+          "texto": "Nota interna: Quiere mantener la distribución. Le gustaría tenerla antes …",
+          "ts": 1794300626186
+        },
+        {
+          "id": "tarea-34600719270-tarea-1",
+          "texto": "Tarea añadida: Llevar catálogo de frentes y muestras de suelo",
+          "ts": 1794302077559
+        }
+      ],
+      "actualizadoEn": 1794302077559,
+      "cambioEstadoEn": 1794298492625,
+      "creadoEn": 1794251700000,
+      "datos": {
+        "metros": "9 m²",
+        "plazo": "antes de Navidad",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "cocina",
+        "antes de navidad"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-12T12:30",
+          "texto": "jueves 12 nov a las 12:30"
+        },
+        {
+          "id": "2026-11-13T12:30",
+          "texto": "viernes 13 nov a las 12:30"
+        }
+      ],
+      "id": "34600719270:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600719270-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Marta, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1794251700000
+        },
+        {
+          "de": "cliente",
+          "id": "34600719270-2",
+          "texto": "Hola, es una cocina pequeña, de 9 m². Quiero cambiar los muebles y el suelo",
+          "ts": 1794252660000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600719270-3",
+          "texto": "Perfecto, Marta. ¿Para cuándo te gustaría empezar?",
+          "ts": 1794252666343
+        },
+        {
+          "de": "cliente",
+          "id": "34600719270-4",
+          "texto": "Antes de Navidad, si se puede",
+          "ts": 1794252741343
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600719270-5",
+          "texto": "Genial. Para verla te propongo el martes 10 nov a las 10:00 o el miércoles 11 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1794252747950
+        },
+        {
+          "de": "cliente",
+          "id": "34600719270-6",
+          "texto": "¡Buenos días! Me iría mejor a las 12:30, que es cuando salgo a comer. ¿Tenéis algo?",
+          "ts": 1794298200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600719270-7",
+          "texto": "Sí, a las 12:30 te propongo el jueves 12 nov a las 12:30 o el viernes 13 nov a las 12:30. ¿Cuál prefieres?",
+          "ts": 1794298207710
+        },
+        {
+          "de": "cliente",
+          "id": "34600719270-8",
+          "texto": "El segundo",
+          "ts": 1794298480985
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600719270-9",
+          "texto": "Hecho, visita reservada para el viernes 13 nov a las 12:30. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1794298492625
+        }
+      ],
+      "msPrimerWhatsApp": 1572,
+      "nombre": "Marta Soler",
+      "notas": [
+        {
+          "id": "34600719270-nota-1",
+          "texto": "Quiere mantener la distribución. Le gustaría tenerla antes de Navidad.",
+          "ts": 1794300626186
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 12000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600719270-tarea-1",
+          "texto": "Llevar catálogo de frentes y muestras de suelo",
+          "ts": 1794302077559,
+          "vence": "2026-11-13"
+        }
+      ],
+      "telefono": "34600719270",
+      "visita": {
+        "id": "2026-11-13T12:30",
+        "texto": "viernes 13 nov a las 12:30"
+      },
+      "zona": "Sants"
+    },
+    "34600759437:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600759437:ejemplo-1792082400000",
+          "texto": "Estado: En conversación",
+          "ts": 1792082400000
+        },
+        {
+          "id": "ficha-34600759437:ejemplo-1792083543623",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792083543623
+        }
+      ],
+      "actualizadoEn": 1792083543623,
+      "cambioEstadoEn": 1792082400000,
+      "creadoEn": 1792082400000,
+      "datos": {
+        "metros": "10 m²",
+        "plazo": "después de Reyes",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "cocina"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-16T12:30",
+          "texto": "viernes 16 oct a las 12:30"
+        },
+        {
+          "id": "2026-10-19T17:00",
+          "texto": "lunes 19 oct a las 17:00"
+        }
+      ],
+      "id": "34600759437:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600759437-1",
+          "texto": "¡Buenas! Queremos cambiar los muebles de la cocina y la encimera. Son unos 10 m²",
+          "ts": 1792082400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600759437-2",
+          "texto": "¡Buenas! Soy el asistente virtual de Estudio de reformas. ¿Para cuándo os gustaría empezar?",
+          "ts": 1792082405363
+        },
+        {
+          "de": "cliente",
+          "id": "34600759437-3",
+          "texto": "Después de Reyes",
+          "ts": 1792082468278
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600759437-4",
+          "texto": "Genial. Para verla os propongo el viernes 16 oct a las 12:30 o el lunes 19 oct a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1792082478666
+        },
+        {
+          "de": "cliente",
+          "id": "34600759437-5",
+          "texto": "Lo tengo que hablar con mi pareja, que tiene un horario complicado",
+          "ts": 1792082825853
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600759437-6",
+          "texto": "Claro, sin problema. Cuando lo sepáis, me decís por aquí.",
+          "ts": 1792082832180
+        }
+      ],
+      "msPrimeraRespuesta": 5363,
+      "nombre": "Ferran",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600759437"
+    },
+    "34600771447:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600771447:ejemplo-1792440900000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792440900000
+        },
+        {
+          "id": "estado-34600771447:ejemplo-1792442157120",
+          "texto": "Estado: En conversación",
+          "ts": 1792442157120
+        },
+        {
+          "id": "ficha-34600771447:ejemplo-1792479600000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792479600000
+        }
+      ],
+      "actualizadoEn": 1792479600000,
+      "cambioEstadoEn": 1792442157120,
+      "creadoEn": 1792440900000,
+      "datos": {
+        "metros": "16 m²",
+        "tipo": "Terraza"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "terraza"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600771447:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600771447-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Gemma, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792440900000
+        },
+        {
+          "de": "cliente",
+          "id": "34600771447-2",
+          "texto": "¡Hola! La terraza del ático",
+          "ts": 1792442157120
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600771447-3",
+          "texto": "¡Hola, Gemma! ¿Cuántos metros tiene la terraza, más o menos?",
+          "ts": 1792442163159
+        },
+        {
+          "de": "cliente",
+          "id": "34600771447-4",
+          "texto": "Unos 16. Queremos cambiar el suelo y poner una pérgola",
+          "ts": 1792442207309
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600771447-5",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1792442214927
+        }
+      ],
+      "msPrimerWhatsApp": 1787,
+      "nombre": "Gemma Pujol",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600771447",
+      "zona": "Sant Andreu"
+    },
+    "34600773812:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600773812:ejemplo-1792579500000",
+          "texto": "Estado: En conversación",
+          "ts": 1792579500000
+        },
+        {
+          "id": "ficha-34600773812:ejemplo-1792580487649",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792580487649
+        }
+      ],
+      "actualizadoEn": 1792580487649,
+      "cambioEstadoEn": 1792579500000,
+      "creadoEn": 1792579500000,
+      "datos": {
+        "metros": "8 m²",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "cocina"
+      ],
+      "huecosOfrecidos": [],
+      "id": "34600773812:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600773812-1",
+          "texto": "¡Hola! Quiero reformar la cocina, es pequeñita",
+          "ts": 1792579500000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600773812-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. ¿Cuántos metros tiene, más o menos?",
+          "ts": 1792579507452
+        },
+        {
+          "de": "cliente",
+          "id": "34600773812-3",
+          "texto": "Unos 8 m²",
+          "ts": 1792579567811
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600773812-4",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1792579575506
+        }
+      ],
+      "msPrimeraRespuesta": 7452,
+      "nombre": "Mireia",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600773812"
+    },
+    "34600784447:ejemplo": {
+      "actividad": [
+        {
+          "id": "alta-34600784447:ejemplo-1793028000000",
+          "texto": "Lo añadiste tú",
+          "ts": 1793028000000
+        },
+        {
+          "id": "nota-34600784447-nota-1",
+          "texto": "Nota interna: Ha llamado por teléfono: quiere cambiar la bañera por un pl…",
+          "ts": 1793028373021
+        }
+      ],
+      "actualizadoEn": 1793028373021,
+      "cambioEstadoEn": 1793028000000,
+      "creadoEn": 1793028000000,
+      "datos": {
+        "tipo": "Plato de ducha"
+      },
+      "ejemplo": true,
+      "estado": "nuevo",
+      "huecosOfrecidos": [],
+      "id": "34600784447:ejemplo",
+      "mensajes": [],
+      "nombre": "Irene Casals",
+      "notas": [
+        {
+          "id": "34600784447-nota-1",
+          "texto": "Ha llamado por teléfono: quiere cambiar la bañera por un plato de ducha.",
+          "ts": 1793028373021
+        }
+      ],
+      "origen": "manual",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600784447"
+    },
+    "34600790671:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600790671:ejemplo-1793863200000",
+          "texto": "Estado: En conversación",
+          "ts": 1793863200000
+        },
+        {
+          "id": "estado-34600790671:ejemplo-1793863208685",
+          "texto": "Marcado como spam: Proveedor ofreciendo material",
+          "ts": 1793863208685
+        }
+      ],
+      "actualizadoEn": 1793863208685,
+      "cambioEstadoEn": 1793863208685,
+      "creadoEn": 1793863200000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "spam",
+      "huecosOfrecidos": [],
+      "id": "34600790671:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600790671-1",
+          "texto": "Buenas, distribuimos porcelánico de gran formato a precio de fábrica. ¿Os paso el catálogo?",
+          "ts": 1793863200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600790671-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Gracias, pero ahora mismo no buscamos proveedores. ¡Que vaya bien!",
+          "ts": 1793863208685
+        }
+      ],
+      "motivoSpam": "Proveedor ofreciendo material",
+      "msPrimeraRespuesta": 8685,
+      "nombre": "Cerámica Distribución",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600790671"
+    },
+    "34600794333:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600794333:ejemplo-1793988900000",
+          "texto": "Estado: En conversación",
+          "ts": 1793988900000
+        },
+        {
+          "id": "reserva-34600794333:ejemplo-1793989040235",
+          "texto": "Visita reservada: lunes 16 nov a las 17:00",
+          "ts": 1793989040235
+        },
+        {
+          "id": "estado-34600794333:ejemplo-1793989040235",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793989040235
+        },
+        {
+          "id": "ficha-34600794333:ejemplo-1794211200000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794211200000
+        },
+        {
+          "id": "tarea-34600794333-tarea-1",
+          "texto": "Tarea añadida: Llevar muestras de tarima exterior a la visita",
+          "ts": 1794219300000
+        }
+      ],
+      "actualizadoEn": 1794219300000,
+      "cambioEstadoEn": 1793989040235,
+      "creadoEn": 1793988900000,
+      "datos": {
+        "metros": "18 m²",
+        "plazo": "en primavera",
+        "tipo": "Terraza"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "terraza"
+      ],
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-13T17:00",
+          "texto": "viernes 13 nov a las 17:00"
+        },
+        {
+          "id": "2026-11-16T17:00",
+          "texto": "lunes 16 nov a las 17:00"
+        }
+      ],
+      "id": "34600794333:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600794333-1",
+          "texto": "¡Buenas! ¿Hacéis reformas de terrazas?",
+          "ts": 1793988900000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600794333-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Sí, claro. ¿Cuántos metros tiene la terraza, más o menos?",
+          "ts": 1793988907853
+        },
+        {
+          "de": "cliente",
+          "id": "34600794333-3",
+          "texto": "18 m². Queremos poner tarima de madera y unas jardineras",
+          "ts": 1793988938353
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600794333-4",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793988945596
+        },
+        {
+          "de": "cliente",
+          "id": "34600794333-5",
+          "texto": "Para primavera",
+          "ts": 1793988983250
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600794333-6",
+          "texto": "Genial. Para verla te propongo el viernes 13 nov a las 17:00 o el lunes 16 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1793988995227
+        },
+        {
+          "de": "cliente",
+          "id": "34600794333-7",
+          "texto": "El segundo me va bien",
+          "ts": 1793989034237
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600794333-8",
+          "texto": "Hecho, visita reservada para el lunes 16 nov a las 17:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1793989040235
+        }
+      ],
+      "msPrimeraRespuesta": 7853,
+      "nombre": "Biel",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 5500,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600794333-tarea-1",
+          "texto": "Llevar muestras de tarima exterior a la visita",
+          "ts": 1794219300000,
+          "vence": "2026-11-16"
+        }
+      ],
+      "telefono": "34600794333",
+      "visita": {
+        "id": "2026-11-16T17:00",
+        "texto": "lunes 16 nov a las 17:00"
+      }
+    },
+    "34600823933:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600823933:ejemplo-1792964400000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792964400000
+        },
+        {
+          "id": "estado-34600823933:ejemplo-1792997400000",
+          "texto": "Estado: En conversación",
+          "ts": 1792997400000
+        },
+        {
+          "id": "reserva-34600823933:ejemplo-1792998088205",
+          "texto": "Visita reservada: jueves 29 oct a las 17:00",
+          "ts": 1792998088205
+        },
+        {
+          "id": "estado-34600823933:ejemplo-1792998088205",
+          "texto": "Estado: Visita reservada",
+          "ts": 1792998088205
+        },
+        {
+          "id": "ficha-34600823933:ejemplo-1793001600000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793001600000
+        },
+        {
+          "id": "etapa-34600823933:ejemplo-1793293626827",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1793293626827
+        },
+        {
+          "id": "ficha-34600823933:ejemplo-1793615400000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1793615400000
+        },
+        {
+          "id": "nota-34600823933-nota-1",
+          "texto": "Nota interna: Presupuesto enviado el 2 nov",
+          "ts": 1793615460000
+        },
+        {
+          "id": "tarea-34600823933-tarea-1",
+          "texto": "Tarea añadida: Llamar a Elena: seguimiento del presupuesto",
+          "ts": 1793616414617
+        },
+        {
+          "id": "hecha-34600823933-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793877300000
+        },
+        {
+          "id": "cierre-34600823933:ejemplo-1793878817268",
+          "texto": "No sigue · Ha elegido a otro",
+          "ts": 1793878817268
+        }
+      ],
+      "actualizadoEn": 1793878817268,
+      "cambioEstadoEn": 1793293626827,
+      "cierre": "no",
+      "cierreEn": 1793878817268,
+      "creadoEn": 1792964400000,
+      "datos": {
+        "metros": "13 m²",
+        "plazo": "en febrero",
+        "tipo": "Cocina"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "cocina",
+        "presupuesto enviado"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-28T17:00",
+          "texto": "miércoles 28 oct a las 17:00"
+        },
+        {
+          "id": "2026-10-29T17:00",
+          "texto": "jueves 29 oct a las 17:00"
+        }
+      ],
+      "id": "34600823933:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Elena, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792964400000
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-2",
+          "texto": "¡Buenos días! Es la cocina, queremos cambiarla entera",
+          "ts": 1792997400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-3",
+          "texto": "¡Buenos días, Elena! ¿Cuántos metros tiene, más o menos?",
+          "ts": 1792997410301
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-4",
+          "texto": "13 m², es alargada",
+          "ts": 1792997736153
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-5",
+          "texto": "Perfecto. ¿Para cuándo os gustaría empezar?",
+          "ts": 1792997745921
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-6",
+          "texto": "En febrero",
+          "ts": 1792997801903
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-7",
+          "texto": "Genial. Para verla os propongo el miércoles 28 oct a las 17:00 o el jueves 29 oct a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1792997807117
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-8",
+          "texto": "El segundo, que ese día salgo antes del trabajo",
+          "ts": 1792998080458
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-9",
+          "texto": "Hecho, visita reservada para el jueves 29 oct a las 17:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1792998088205
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-10",
+          "texto": "Recibido el presupuesto, gracias. Lo miramos con calma.",
+          "ts": 1793621400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-11",
+          "manual": true,
+          "texto": "Perfecto, Elena. Si tienes cualquier duda, me dices por aquí.",
+          "ts": 1793622044706
+        },
+        {
+          "de": "cliente",
+          "id": "34600823933-12",
+          "texto": "Gracias por la llamada. Al final nos quedamos con otra empresa que puede empezar antes. ¡Gracias por todo!",
+          "ts": 1793878200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600823933-13",
+          "manual": true,
+          "texto": "Gracias a ti por avisar, Elena. ¡Mucha suerte con la obra!",
+          "ts": 1793878496244
+        }
+      ],
+      "motivoCierre": "Ha elegido a otro",
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 2285,
+      "nombre": "Elena Costa",
+      "notas": [
+        {
+          "id": "34600823933-nota-1",
+          "texto": "Presupuesto enviado el 2 nov",
+          "ts": 1793615460000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 16840,
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600823933-tarea-1",
+          "texto": "Llamar a Elena: seguimiento del presupuesto",
+          "ts": 1793616414617
+        }
+      ],
+      "telefono": "34600823933",
+      "visita": {
+        "id": "2026-10-29T17:00",
+        "texto": "jueves 29 oct a las 17:00"
+      },
+      "zona": "Les Corts"
+    },
+    "34600871996:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600871996:ejemplo-1793363700000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793363700000
+        },
+        {
+          "id": "estado-34600871996:ejemplo-1793363790736",
+          "texto": "Estado: En conversación",
+          "ts": 1793363790736
+        },
+        {
+          "id": "reserva-34600871996:ejemplo-1793372974921",
+          "texto": "Visita reservada: viernes 6 nov a las 12:30",
+          "ts": 1793372974921
+        },
+        {
+          "id": "estado-34600871996:ejemplo-1793372974921",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793372974921
+        },
+        {
+          "id": "ficha-34600871996:ejemplo-1793374250286",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793374250286
+        },
+        {
+          "id": "etapa-34600871996:ejemplo-1793969901210",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1793969901210
+        },
+        {
+          "id": "ficha-34600871996:ejemplo-1794307200000",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1794307200000
+        },
+        {
+          "id": "nota-34600871996-nota-1",
+          "texto": "Nota interna: Presupuesto enviado el 10 nov",
+          "ts": 1794307260000
+        },
+        {
+          "id": "tarea-34600871996-tarea-1",
+          "texto": "Tarea añadida: Llamar a Teresa: ¿le encaja el porcelánico?",
+          "ts": 1794308016576
+        }
+      ],
+      "actualizadoEn": 1794333600000,
+      "cambioEstadoEn": 1793969901210,
+      "creadoEn": 1793363700000,
+      "datos": {
+        "metros": "85 m²",
+        "plazo": "en enero",
+        "tipo": "Suelos"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "suelos",
+        "presupuesto enviado"
+      ],
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-05T12:30",
+          "texto": "jueves 5 nov a las 12:30"
+        },
+        {
+          "id": "2026-11-06T12:30",
+          "texto": "viernes 6 nov a las 12:30"
+        }
+      ],
+      "id": "34600871996:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Teresa, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793363700000
+        },
+        {
+          "de": "cliente",
+          "id": "34600871996-2",
+          "texto": "Hola. Cambiar el suelo de todo el piso, ahora hay gres de los 90",
+          "ts": 1793363790736
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-3",
+          "texto": "¡Hola, Teresa! ¿Cuántos metros son, más o menos?",
+          "ts": 1793363798304
+        },
+        {
+          "de": "cliente",
+          "id": "34600871996-4",
+          "texto": "85 sin contar baño y cocina",
+          "ts": 1793363904096
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-5",
+          "texto": "Perfecto. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793363910252
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600871996-6",
+          "texto": "En enero. Estaría bien saber cuántos días tendríamos que irnos de casa",
+          "ts": 1793363951293
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-7",
+          "texto": "Eso te lo concreta el equipo cuando lo haya visto. Para la visita te propongo el jueves 5 nov a las 12:30 o el viernes 6 nov a las 12:30. ¿Cuál te va mejor?",
+          "ts": 1793363962133
+        },
+        {
+          "de": "cliente",
+          "id": "34600871996-8",
+          "texto": "El segundo",
+          "ts": 1793372963431
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-9",
+          "texto": "Hecho, visita reservada para el viernes 6 nov a las 12:30. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1793372974921
+        },
+        {
+          "de": "cliente",
+          "id": "34600871996-10",
+          "texto": "Gracias por venir. Una duda: ¿el porcelánico imitación madera va bien con suelo radiante?",
+          "ts": 1793986200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600871996-11",
+          "manual": true,
+          "texto": "¡Hola, Teresa! Sí, va muy bien. Te lo incluimos en el presupuesto como opción.",
+          "ts": 1793986829300
+        },
+        {
+          "de": "cliente",
+          "id": "34600871996-12",
+          "texto": "¡Recibido, gracias! Lo miramos esta semana",
+          "ts": 1794333600000
+        }
+      ],
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 1851,
+      "nombre": "Teresa Molina",
+      "notas": [
+        {
+          "id": "34600871996-nota-1",
+          "texto": "Presupuesto enviado el 10 nov",
+          "ts": 1794307260000
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 6120,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600871996-tarea-1",
+          "texto": "Llamar a Teresa: ¿le encaja el porcelánico?",
+          "ts": 1794308016576,
+          "vence": "2026-11-12"
+        }
+      ],
+      "telefono": "34600871996",
+      "visita": {
+        "id": "2026-11-06T12:30",
+        "texto": "viernes 6 nov a las 12:30"
+      },
+      "zona": "Sant Antoni"
+    },
+    "34600924354:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600924354:ejemplo-1793128200000",
+          "texto": "Estado: En conversación",
+          "ts": 1793128200000
+        },
+        {
+          "id": "ficha-34600924354:ejemplo-1793174400000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793174400000
+        }
+      ],
+      "actualizadoEn": 1793174400000,
+      "cambioEstadoEn": 1793128200000,
+      "creadoEn": 1793128200000,
+      "datos": {
+        "metros": "60 m²",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "vivienda entera"
+      ],
+      "fuente": {
+        "anuncio": "¿Reformas en casa? Pide tu visita sin compromiso",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-28T10:00",
+          "texto": "miércoles 28 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-30T17:00",
+          "texto": "viernes 30 oct a las 17:00"
+        }
+      ],
+      "id": "34600924354:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600924354-1",
+          "texto": "Hola. Tengo un piso de 60 m² para reformar entero. ¿Más o menos cuánto cuesta?",
+          "ts": 1793128200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600924354-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Sin verlo no te puedo dar una cifra fiable: depende mucho del estado del piso y de los acabados. ¿Para cuándo te gustaría empezar?",
+          "ts": 1793128209858
+        },
+        {
+          "de": "cliente",
+          "id": "34600924354-3",
+          "texto": "Pues no sé, depende del precio",
+          "ts": 1793128266778
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600924354-4",
+          "texto": "Normal. Si quieres, un técnico lo ve y el equipo te prepara el presupuesto. Te propongo el miércoles 28 oct a las 10:00 o el viernes 30 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1793128272701
+        }
+      ],
+      "msPrimeraRespuesta": 9858,
+      "nombre": "Laura G.",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600924354"
+    },
+    "34600928577:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600928577:ejemplo-1793572800000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793572800000
+        },
+        {
+          "id": "tarea-34600928577-tarea-1",
+          "texto": "Tarea añadida: Llamar: no contesta al WhatsApp",
+          "ts": 1793610600000
+        },
+        {
+          "id": "hecha-34600928577-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793705400000
+        }
+      ],
+      "actualizadoEn": 1793705400000,
+      "cambioEstadoEn": 1793572800000,
+      "creadoEn": 1793572800000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "nuevo",
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600928577:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600928577-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola maria, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793572800000
+        }
+      ],
+      "msPrimerWhatsApp": 2080,
+      "nombre": "maria lopez",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600928577-tarea-1",
+          "texto": "Llamar: no contesta al WhatsApp",
+          "ts": 1793610600000
+        }
+      ],
+      "telefono": "34600928577",
+      "zona": "Esplugues"
+    },
+    "34600931879:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600931879:ejemplo-1792176600000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792176600000
+        },
+        {
+          "id": "estado-34600931879:ejemplo-1792394400000",
+          "texto": "Estado: En conversación",
+          "ts": 1792394400000
+        },
+        {
+          "id": "estado-34600931879:ejemplo-1792403742468",
+          "texto": "Pasado a persona: Bajante comunitaria: permiso de la comunidad",
+          "ts": 1792403742468
+        },
+        {
+          "id": "ficha-34600931879:ejemplo-1792404883150",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1792404883150
+        },
+        {
+          "id": "etapa-34600931879:ejemplo-1792407397724",
+          "texto": "Devuelto a tu asistente",
+          "ts": 1792407397724
+        },
+        {
+          "id": "nota-34600931879-nota-1",
+          "texto": "Nota interna: La comunidad vota la bajante en la junta de final de mes.",
+          "ts": 1792407731749
+        },
+        {
+          "id": "tarea-34600931879-tarea-1",
+          "texto": "Tarea añadida: Pedir a la comunidad el acta de la bajante",
+          "ts": 1794238200000
+        }
+      ],
+      "actualizadoEn": 1794238200000,
+      "cambioEstadoEn": 1792407397724,
+      "creadoEn": 1792176600000,
+      "datos": {
+        "metros": "4 m²",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "baño",
+        "comunidad"
+      ],
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [],
+      "id": "34600931879:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600931879-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Rosa, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792176600000
+        },
+        {
+          "de": "cliente",
+          "id": "34600931879-2",
+          "texto": "Buenos días. Quiero mover el baño a donde ahora está el lavadero, para ganar una habitación",
+          "ts": 1792394400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600931879-3",
+          "texto": "¡Buenos días, Rosa! ¿Cuántos metros tendría el baño nuevo, más o menos?",
+          "ts": 1792394410925
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600931879-4",
+          "texto": "Unos 4. El administrador de la finca dice que por la bajante necesito permiso de la comunidad",
+          "ts": 1792403731657
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600931879-5",
+          "texto": "Gracias por contármelo. Si hay que tocar la bajante y pedir permiso a la comunidad, es mejor que lo lleve alguien del equipo: te paso con un compañero, que te escribe en cuanto pueda.",
+          "ts": 1792403742468
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600931879-6",
+          "manual": true,
+          "texto": "Hola, Rosa, he visto lo de la bajante. Hasta que la comunidad no dé el permiso no podemos mover el baño. ¿Tenéis ya fecha de junta?",
+          "ts": 1792405304141
+        },
+        {
+          "de": "cliente",
+          "id": "34600931879-7",
+          "texto": "La junta es a final de mes. Cuando lo aprueben, os digo",
+          "ts": 1792406294237
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600931879-8",
+          "manual": true,
+          "texto": "Perfecto, Rosa. Mientras tanto, cualquier duda nos la puedes escribir por aquí.",
+          "ts": 1792407050051
+        }
+      ],
+      "msPrimerWhatsApp": 1699,
+      "nombre": "Rosa Camps",
+      "notas": [
+        {
+          "id": "34600931879-nota-1",
+          "texto": "La comunidad vota la bajante en la junta de final de mes.",
+          "ts": 1792407731749
+        }
+      ],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600931879-tarea-1",
+          "texto": "Pedir a la comunidad el acta de la bajante",
+          "ts": 1794238200000,
+          "vence": "2026-11-18"
+        }
+      ],
+      "telefono": "34600931879",
+      "zona": "El Born"
+    },
+    "34600934173:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600934173:ejemplo-1793623800000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793623800000
+        },
+        {
+          "id": "estado-34600934173:ejemplo-1793627199747",
+          "texto": "Estado: En conversación",
+          "ts": 1793627199747
+        },
+        {
+          "id": "reserva-34600934173:ejemplo-1793627531832",
+          "texto": "Visita reservada: lunes 9 nov a las 10:00",
+          "ts": 1793627531832
+        },
+        {
+          "id": "estado-34600934173:ejemplo-1793627531832",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793627531832
+        },
+        {
+          "id": "ficha-34600934173:ejemplo-1793629800000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793629800000
+        },
+        {
+          "id": "etapa-34600934173:ejemplo-1794219220064",
+          "texto": "Pasado a persona: Lo llevas tú desde el panel",
+          "ts": 1794219220064
+        },
+        {
+          "id": "ficha-34600934173:ejemplo-1794220278917",
+          "texto": "Ficha editada: presupuesto",
+          "ts": 1794220278917
+        },
+        {
+          "id": "tarea-34600934173-tarea-1",
+          "texto": "Tarea añadida: Enviar presupuesto a Montse",
+          "ts": 1794221498056
+        }
+      ],
+      "actualizadoEn": 1794234600000,
+      "cambioEstadoEn": 1794219220064,
+      "creadoEn": 1793623800000,
+      "datos": {
+        "metros": "75 m²",
+        "plazo": "lo antes posible",
+        "tipo": "Vivienda entera"
+      },
+      "ejemplo": true,
+      "estado": "persona",
+      "etiquetas": [
+        "vivienda entera",
+        "financiación"
+      ],
+      "fuente": {
+        "campana": "Reformas Barcelona",
+        "plataforma": "Meta",
+        "tipo": "anuncio"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-09T10:00",
+          "texto": "lunes 9 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-10T17:00",
+          "texto": "martes 10 nov a las 17:00"
+        }
+      ],
+      "id": "34600934173:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600934173-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Montse, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793623800000
+        },
+        {
+          "de": "cliente",
+          "id": "34600934173-2",
+          "texto": "Hola, reforma integral de un piso de 75 m²",
+          "ts": 1793627199747
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600934173-3",
+          "texto": "¡Hola, Montse! ¿Para cuándo te gustaría empezar?",
+          "ts": 1793627206288
+        },
+        {
+          "de": "cliente",
+          "id": "34600934173-4",
+          "texto": "Lo antes posible. ¿Ofrecéis financiación?",
+          "ts": 1793627474787
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600934173-5",
+          "texto": "Las condiciones de pago las ve el equipo contigo junto con el presupuesto, después de la visita. Para ver el piso te propongo el lunes 9 nov a las 10:00 o el martes 10 nov a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1793627481492
+        },
+        {
+          "de": "cliente",
+          "id": "34600934173-6",
+          "texto": "El primero",
+          "ts": 1793627525115
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600934173-7",
+          "texto": "Hecho, visita reservada para el lunes 9 nov a las 10:00. Si prefieres hablar con una persona, dímelo por aquí.",
+          "ts": 1793627531832
+        },
+        {
+          "audio": true,
+          "de": "cliente",
+          "id": "34600934173-8",
+          "texto": "Gracias por venir esta mañana. Se me olvidó comentaros que el radiador del salón también lo queremos cambiar",
+          "ts": 1794227400000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600934173-9",
+          "manual": true,
+          "texto": "¡Gracias a ti, Montse! Apuntado, lo incluimos en el presupuesto.",
+          "ts": 1794228152429
+        },
+        {
+          "de": "cliente",
+          "id": "34600934173-10",
+          "texto": "Genial. ¿Para cuándo lo tendríais?",
+          "ts": 1794228497767
+        },
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600934173-11",
+          "manual": true,
+          "texto": "Esta semana te lo enviamos por email.",
+          "ts": 1794234600000
+        }
+      ],
+      "motivoPersona": "Lo llevas tú desde el panel",
+      "msPrimerWhatsApp": 3900,
+      "nombre": "Montse Ferrer Puig",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 74000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600934173-tarea-1",
+          "texto": "Enviar presupuesto a Montse",
+          "ts": 1794221498056,
+          "vence": "2026-11-10"
+        }
+      ],
+      "telefono": "34600934173",
+      "visita": {
+        "id": "2026-11-09T10:00",
+        "texto": "lunes 9 nov a las 10:00"
+      },
+      "zona": "Gràcia"
+    },
+    "34600965112:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600965112:ejemplo-1792782900000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1792782900000
+        },
+        {
+          "id": "tarea-34600965112-tarea-1",
+          "texto": "Tarea añadida: Llamar: no contesta al WhatsApp",
+          "ts": 1793005800000
+        },
+        {
+          "id": "hecha-34600965112-tarea-1",
+          "texto": "Tarea hecha",
+          "ts": 1793100600000
+        }
+      ],
+      "actualizadoEn": 1793100600000,
+      "cambioEstadoEn": 1792782900000,
+      "creadoEn": 1792782900000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "nuevo",
+      "huecosOfrecidos": [],
+      "id": "34600965112:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "entregado",
+          "id": "34600965112-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Anna, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1792782900000
+        }
+      ],
+      "msPrimerWhatsApp": 1593,
+      "nombre": "Anna Bertran",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [
+        {
+          "hecha": true,
+          "id": "34600965112-tarea-1",
+          "texto": "Llamar: no contesta al WhatsApp",
+          "ts": 1793005800000
+        }
+      ],
+      "telefono": "34600965112",
+      "zona": "Gràcia"
+    },
+    "34600971987:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600971987:ejemplo-1792834200000",
+          "texto": "Estado: En conversación",
+          "ts": 1792834200000
+        },
+        {
+          "id": "ficha-34600971987:ejemplo-1793001600000",
+          "texto": "Ficha editada: etiquetas",
+          "ts": 1793001600000
+        }
+      ],
+      "actualizadoEn": 1793001600000,
+      "cambioEstadoEn": 1792834200000,
+      "creadoEn": 1792834200000,
+      "datos": {
+        "metros": "5 m²",
+        "plazo": "en enero",
+        "tipo": "Baño"
+      },
+      "ejemplo": true,
+      "estado": "conversacion",
+      "etiquetas": [
+        "baño"
+      ],
+      "huecosOfrecidos": [
+        {
+          "id": "2026-10-26T10:00",
+          "texto": "lunes 26 oct a las 10:00"
+        },
+        {
+          "id": "2026-10-27T17:00",
+          "texto": "martes 27 oct a las 17:00"
+        }
+      ],
+      "id": "34600971987:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600971987-1",
+          "texto": "¡Hola! ¿Cuánto se tarda en reformar un baño de 5 metros?",
+          "ts": 1792834200000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600971987-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Depende de lo que haya que hacer, y eso lo concreta el equipo después de ver el baño. ¿Para cuándo te gustaría empezar?",
+          "ts": 1792834205214
+        },
+        {
+          "de": "cliente",
+          "id": "34600971987-3",
+          "texto": "En enero, pero no podemos estar muchos días sin baño",
+          "ts": 1792834291513
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600971987-4",
+          "texto": "Entendido, lo tendrá en cuenta el técnico. Para verlo te propongo el lunes 26 oct a las 10:00 o el martes 27 oct a las 17:00. ¿Cuál te va mejor?",
+          "ts": 1792834298158
+        }
+      ],
+      "msPrimeraRespuesta": 5214,
+      "nombre": "Quim",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600971987"
+    },
+    "34600980072:ejemplo": {
+      "actividad": [
+        {
+          "id": "permiso-34600980072:ejemplo-1793827800000",
+          "texto": "Ha pedido que le escribamos por WhatsApp desde tu web",
+          "ts": 1793827800000
+        },
+        {
+          "id": "estado-34600980072:ejemplo-1793866860000",
+          "texto": "Estado: En conversación",
+          "ts": 1793866860000
+        },
+        {
+          "id": "reserva-34600980072:ejemplo-1793867359785",
+          "texto": "Visita reservada: viernes 13 nov a las 10:00",
+          "ts": 1793867359785
+        },
+        {
+          "id": "estado-34600980072:ejemplo-1793867359785",
+          "texto": "Estado: Visita reservada",
+          "ts": 1793867359785
+        },
+        {
+          "id": "ficha-34600980072:ejemplo-1793868293381",
+          "texto": "Ficha editada: presupuesto, etiquetas",
+          "ts": 1793868293381
+        },
+        {
+          "id": "tarea-34600980072-tarea-1",
+          "texto": "Tarea añadida: Mirar si la cocina y el baño comparten bajante",
+          "ts": 1794310800000
+        }
+      ],
+      "actualizadoEn": 1794310800000,
+      "cambioEstadoEn": 1793867359785,
+      "creadoEn": 1793827800000,
+      "datos": {
+        "plazo": "en febrero",
+        "tipo": "Cocina y baño"
+      },
+      "ejemplo": true,
+      "estado": "visita",
+      "etiquetas": [
+        "cocina",
+        "baño"
+      ],
+      "fuente": {
+        "plataforma": "Google",
+        "tipo": "buscador"
+      },
+      "huecosOfrecidos": [
+        {
+          "id": "2026-11-13T10:00",
+          "texto": "viernes 13 nov a las 10:00"
+        },
+        {
+          "id": "2026-11-18T17:00",
+          "texto": "miércoles 18 nov a las 17:00"
+        }
+      ],
+      "id": "34600980072:ejemplo",
+      "mensajes": [
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980072-1",
+          "nombrePlantilla": "solicitud_general",
+          "plantilla": true,
+          "texto": "Hola Joan, soy el asistente virtual de Estudio de reformas. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?",
+          "ts": 1793827800000
+        },
+        {
+          "de": "cliente",
+          "id": "34600980072-2",
+          "texto": "¡Buenos días! Queremos reformar la cocina y el baño a la vez",
+          "ts": 1793866860000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980072-3",
+          "texto": "¡Buenos días, Joan! ¿Cuántos metros tienen, más o menos, entre los dos?",
+          "ts": 1793866868619
+        },
+        {
+          "de": "cliente",
+          "id": "34600980072-4",
+          "texto": "La cocina unos 9 y el baño unos 5",
+          "ts": 1793866921817
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980072-5",
+          "texto": "Perfecto. ¿Para cuándo os gustaría empezar?",
+          "ts": 1793866933572
+        },
+        {
+          "de": "cliente",
+          "id": "34600980072-6",
+          "texto": "En febrero, si puede ser",
+          "ts": 1793867259027
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980072-7",
+          "texto": "Genial. Para verlos os propongo el viernes 13 nov a las 10:00 o el miércoles 18 nov a las 17:00. ¿Cuál os va mejor?",
+          "ts": 1793867265764
+        },
+        {
+          "de": "cliente",
+          "id": "34600980072-8",
+          "texto": "El primero",
+          "ts": 1793867354645
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980072-9",
+          "texto": "Hecho, visita reservada para el viernes 13 nov a las 10:00. Si preferís hablar con una persona, decídmelo por aquí.",
+          "ts": 1793867359785
+        }
+      ],
+      "msPrimerWhatsApp": 1908,
+      "nombre": "Joan Vila",
+      "notas": [],
+      "origen": "formulario",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "presupuesto": 26000,
+      "tareas": [
+        {
+          "hecha": false,
+          "id": "34600980072-tarea-1",
+          "texto": "Mirar si la cocina y el baño comparten bajante",
+          "ts": 1794310800000,
+          "vence": "2026-11-13"
+        }
+      ],
+      "telefono": "34600980072",
+      "visita": {
+        "id": "2026-11-13T10:00",
+        "texto": "viernes 13 nov a las 10:00"
+      },
+      "zona": "Sagrada Família"
+    },
+    "34600980372:ejemplo": {
+      "actividad": [
+        {
+          "id": "estado-34600980372:ejemplo-1792400700000",
+          "texto": "Estado: En conversación",
+          "ts": 1792400700000
+        },
+        {
+          "id": "estado-34600980372:ejemplo-1792400709209",
+          "texto": "Marcado como spam: Publicidad de una agencia",
+          "ts": 1792400709209
+        }
+      ],
+      "actualizadoEn": 1792400709209,
+      "cambioEstadoEn": 1792400709209,
+      "creadoEn": 1792400700000,
+      "datos": {},
+      "ejemplo": true,
+      "estado": "spam",
+      "huecosOfrecidos": [],
+      "id": "34600980372:ejemplo",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "id": "34600980372-1",
+          "texto": "¡Hola! Somos una agencia y conseguimos 30 clientes de reformas al mes con anuncios. ¿Te va bien una llamada de 10 min?",
+          "ts": 1792400700000
+        },
+        {
+          "de": "agente",
+          "entrega": "leido",
+          "id": "34600980372-2",
+          "texto": "¡Hola! Soy el asistente virtual de Estudio de reformas. Gracias por escribirnos, pero ahora mismo no nos interesa. ¡Que vaya bien!",
+          "ts": 1792400709209
+        }
+      ],
+      "motivoSpam": "Publicidad de una agencia",
+      "msPrimeraRespuesta": 9209,
+      "nombre": "Sara | Marketing",
+      "notas": [],
+      "origen": "whatsapp",
+      "perfilId": "ejemplo",
+      "perfilNombre": "Estudio de reformas",
+      "tareas": [],
+      "telefono": "34600980372"
+    }
+  },
+  "reservas": [
+    {
+      "huecoId": "2026-10-16T10:00",
+      "leadId": "34600159384:ejemplo",
+      "nombre": "Cristina Navarro",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "viernes 16 oct a las 10:00"
+    },
+    {
+      "huecoId": "2026-10-21T10:00",
+      "leadId": "34600075562:ejemplo",
+      "nombre": "David Ribas",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "miércoles 21 oct a las 10:00"
+    },
+    {
+      "huecoId": "2026-10-21T17:00",
+      "leadId": "34600227671:ejemplo",
+      "nombre": "Paula Riera",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "miércoles 21 oct a las 17:00"
+    },
+    {
+      "huecoId": "2026-10-29T17:00",
+      "leadId": "34600823933:ejemplo",
+      "nombre": "Elena Costa",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "jueves 29 oct a las 17:00"
+    },
+    {
+      "huecoId": "2026-11-03T10:00",
+      "leadId": "34600192473:ejemplo",
+      "nombre": "Xavier Gil",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "martes 3 nov a las 10:00"
+    },
+    {
+      "huecoId": "2026-11-06T12:30",
+      "leadId": "34600871996:ejemplo",
+      "nombre": "Teresa Molina",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "viernes 6 nov a las 12:30"
+    },
+    {
+      "huecoId": "2026-11-09T10:00",
+      "leadId": "34600934173:ejemplo",
+      "nombre": "Montse Ferrer Puig",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "lunes 9 nov a las 10:00"
+    },
+    {
+      "huecoId": "2026-11-10T12:30",
+      "leadId": "34600107155:ejemplo",
+      "nombre": "Thomas Weber",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "martes 10 nov a las 12:30"
+    },
+    {
+      "huecoId": "2026-11-12T17:00",
+      "leadId": "34600209689:ejemplo",
+      "nombre": "Albert Serra",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "jueves 12 nov a las 17:00"
+    },
+    {
+      "huecoId": "2026-11-13T10:00",
+      "leadId": "34600980072:ejemplo",
+      "nombre": "Joan Vila",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "viernes 13 nov a las 10:00"
+    },
+    {
+      "huecoId": "2026-11-13T12:30",
+      "leadId": "34600719270:ejemplo",
+      "nombre": "Marta Soler",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "viernes 13 nov a las 12:30"
+    },
+    {
+      "huecoId": "2026-11-16T10:00",
+      "leadId": "34600445149:ejemplo",
+      "nombre": "Núria Vidal",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "lunes 16 nov a las 10:00"
+    },
+    {
+      "huecoId": "2026-11-16T17:00",
+      "leadId": "34600794333:ejemplo",
+      "nombre": "Biel",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "lunes 16 nov a las 17:00"
+    },
+    {
+      "huecoId": "2026-11-17T10:00",
+      "leadId": "34600713054:ejemplo",
+      "nombre": "Giulia Ricci",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "martes 17 nov a las 10:00"
+    },
+    {
+      "huecoId": "2026-11-17T17:00",
+      "leadId": "34600517699:ejemplo",
+      "nombre": "Sílvia Mas",
+      "perfilNombre": "Estudio de reformas",
+      "prueba": true,
+      "texto": "martes 17 nov a las 17:00"
+    }
+  ]
+}

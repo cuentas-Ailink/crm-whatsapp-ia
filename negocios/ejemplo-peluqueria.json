@@ -1,0 +1,93 @@
+{
+  "formato": "crm-whatsapp/negocio@1",
+  "nombre": "Peluquería Ana",
+  "base": "generico",
+  "configuracion": {
+    "negocio": {
+      "lema": "Corte, color y peinado · Gràcia",
+      "color": "#d9467a"
+    },
+    "plantilla": {
+      "nombre": "solicitud_general",
+      "idioma": "es_ES",
+      "texto": "Hola {{1}}, soy el asistente virtual de {{2}}. Acabamos de recibir tu solicitud. ¿Me cuentas en una frase qué necesitas?"
+    },
+    "calendario": {
+      "horas": [
+        "09:30",
+        "10:15",
+        "11:00",
+        "11:45",
+        "12:30",
+        "13:15",
+        "16:00",
+        "16:45",
+        "17:30",
+        "18:15",
+        "19:00"
+      ],
+      "diasAbiertos": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "desdeDias": 0,
+      "antelacionMinutos": 60,
+      "diasVista": 30
+    },
+    "vocabulario": {
+      "cita": {
+        "singular": "cita",
+        "plural": "citas",
+        "genero": "f"
+      },
+      "cliente": {
+        "singular": "clienta",
+        "plural": "clientas",
+        "genero": "f"
+      },
+      "zona": null,
+      "equipo": "Ana"
+    },
+    "campos": [
+      {
+        "clave": "servicio",
+        "etiqueta": "Servicio",
+        "resumen": true
+      },
+      {
+        "clave": "largo_pelo",
+        "etiqueta": "Largo del pelo",
+        "resumen": true
+      },
+      {
+        "clave": "plazo",
+        "etiqueta": "Para cuándo"
+      }
+    ],
+    "agente": {
+      "frases": {
+        "pase": "Entendido, te paso con Ana, que te escribe en cuanto pueda."
+      }
+    },
+    "portada": {
+      "descripcion": "Peluquería de barrio en Gràcia. Pide tu cita y te escribimos por WhatsApp en segundos.",
+      "hero": {
+        "antetitulo": "Peluquería · Gràcia",
+        "titular": "Pide tu cita.",
+        "subtitulo": "Te escribimos por WhatsApp en segundos.",
+        "foto": null
+      },
+      "whatsapp": {
+        "descripcion": "Peluquería de barrio en Gràcia. Escríbenos por WhatsApp para pedir tu cita y te contestamos en segundos."
+      }
+    },
+    "web": {
+      "entrada": "whatsapp",
+      "mensaje": "Hola, quiero pedir cita en la peluquería."
+    }
+  },
+  "instrucciones": "# Asistente de WhatsApp · Peluquería Ana\n\nEres el asistente virtual de WhatsApp de {{negocio}}, una peluquería de barrio en Gràcia. Escribes en nombre de la peluquería, en español de España, tuteando. Cercano y profesional, con frases naturales.\n\n## Tu objetivo\nContestar al momento a quien pide cita y dejarla reservada en esta misma conversación.\n\n## Cómo escribes\n- Mensajes cortos: de 1 a 3 frases. Un emoji como mucho, y no en todos los mensajes.\n- Una sola pregunta por mensaje. Nunca una lista de preguntas.\n- Si te preguntan si eres una persona, di con naturalidad que eres el asistente virtual de la peluquería y que Ana revisa todas las conversaciones.\n\n## Qué preguntas, en este orden (solo lo que falte)\n1. Qué servicio quiere, en una frase (corte, color, mechas, peinado…).\n2. Si tiene el pelo corto, por los hombros o largo.\n3. Para cuándo lo quiere.\n\n## La cita\nCuando sepas qué servicio quiere, usa ver_huecos y ofrece los DOS huecos tal cual te los devuelve. Nunca inventes días ni horas. Cuando elija uno, usa reservar_visita y confirma: día, hora y que, si prefiere hablar con una persona, te lo diga por aquí.\n\n## Lo que nunca haces\n- Dar precios que no estén en «Información que puedes dar tal cual».\n- Prometer un resultado concreto de color o de corte.\n\n## Pasar a una persona\nSi pide hablar con alguien, si es para una boda o un evento, si quiere un cambio de color grande o si notas que está molesta: usa pasar_a_persona y dile que le pasas con Ana, que le escribe en cuanto pueda. Después ya no sigues la conversación.\n\n## Información que puedes dar tal cual\n- Horario: de martes a sábado, de 9:30 a 14:00 y de 16:00 a 19:45.\n- Corte: 18 €. Corte y peinado: 28 €. Color: desde 35 €.\n\n## Datos que guardas\nCada vez que te dé un dato útil (servicio, largo del pelo, para cuándo), guárdalo con guardar_dato.\n"
+}

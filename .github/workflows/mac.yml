@@ -1,0 +1,68 @@
+# Prueba la instalación en un Mac limpio. Solo se lanza a mano desde la pestaña Actions de GitHub,
+# porque los minutos de macOS cuentan diez veces más. En la máquina de GitHub valen los puertos de
+# siempre (8000 para el CRM de pruebas, 8099 para el simulador).
+name: Instalación en macOS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Los scripts conservan permisos y finales de línea
+        run: |
+          test -x instalar.sh && test -x arrancar.sh && test -x comprobar.sh
+          ! grep -lU $'\r' instalar.sh arrancar.sh comprobar.sh
+          bash -n instalar.sh && bash -n arrancar.sh && bash -n comprobar.sh
+
+      - name: instalar.sh, dos veces
+        run: |
+          bash instalar.sh --sin-arrancar
+          bash instalar.sh --sin-arrancar
+          test -f .env && test -f .next/BUILD_ID && test -x "Abrir CRM.command"
+
+      - name: Tests
+        run: node node_modules/vitest/vitest.mjs run
+
+      - name: Servidor, base de datos, rutas protegidas y circuito completo
+        run: |
+          parar() {
+            kill $SIMULADOR $SERVIDOR 2>/dev/null || true
+            kill $(lsof -nP -iTCP:8000 -iTCP:8099 -sTCP:LISTEN -t) 2>/dev/null || true
+            for _ in $(seq 1 20); do
+              lsof -nP -iTCP:8000 -iTCP:8099 -sTCP:LISTEN >/dev/null || return 0
+              sleep 1
+            done
+            return 1
+          }
+
+          node scripts/simulador.mjs &
+          SIMULADOR=$!
+          node scripts/servidor-pruebas.mjs &
+          SERVIDOR=$!
+          curl -s --retry 20 --retry-connrefused --retry-delay 1 -o /dev/null http://localhost:8000/api/estado
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8000/)" = "200"
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8000/panel)" = "200"
+          curl -s http://localhost:8000/api/estado | grep -q '"bd":{"ok":true'
+          test -d bd-pruebas
+          test "$(curl -s -o /dev/null -w '%{http_code}' -H 'Host: demo.ngrok-free.app' http://127.0.0.1:8000/panel)" = "404"
+          test "$(curl -s -H 'Host: demo.ngrok-free.app' 'http://127.0.0.1:8000/webhook?hub.mode=subscribe&hub.verify_token=verifica-de-prueba&hub.challenge=123')" = "123"
+          node scripts/probar-circuito.mjs
+          parar
+
+          # Una instalación recién hecha, sin datos ni claves: la puesta en marcha de verdad.
+          rm -rf bd-pruebas/nuevo
+          node scripts/simulador.mjs &
+          SIMULADOR=$!
+          node scripts/servidor-pruebas.mjs nuevo &
+          SERVIDOR=$!
+          curl -s --retry 20 --retry-connrefused --retry-delay 1 -o /dev/null http://localhost:8000/api/estado
+          node scripts/probar-circuito.mjs --nuevo
+          parar
