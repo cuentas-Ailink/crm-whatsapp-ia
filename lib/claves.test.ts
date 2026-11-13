@@ -15,6 +15,7 @@ import {
   nombreClaveVoz,
   terminaEn,
 } from "./claves";
+import { escucharCambios } from "./eventos";
 
 vi.mock("./configuracion-servidor", () => ({
   configuracionActiva: vi.fn(async () => ({
@@ -97,6 +98,30 @@ describe("guardarClave", () => {
     expect(r).toEqual({ ok: true, terminaEn: "…nco`" });
     expect(leerComoNext(leer()).ANTHROPIC_API_KEY).toBe(valor);
     expect(process.env.ANTHROPIC_API_KEY).toBe(valor);
+  });
+
+  it("guardar o borrar una clave olvida lo guardado de /api/sistema y avisa al panel", async () => {
+    const g = globalThis as Record<string, unknown>;
+    const tipos: string[] = [];
+    const dejar = escucharCambios((c) => tipos.push(c.tipo));
+    try {
+      g.__sistemaConexiones = { ultimo: "viejo" };
+      g.__sistemaComprobaciones = { cache: "viejo" };
+      expect((await guardarClave("WHATSAPP_TOKEN", "token-nuevo-123")).ok).toBe(true);
+      expect(g.__sistemaConexiones).toBeUndefined();
+      expect(g.__sistemaComprobaciones).toBeUndefined();
+      await new Promise((r) => setTimeout(r, 80));
+      expect(tipos).toContain("sistema");
+
+      tipos.length = 0;
+      g.__sistemaConexiones = { ultimo: "viejo" };
+      await borrarClave("WHATSAPP_TOKEN");
+      expect(g.__sistemaConexiones).toBeUndefined();
+      await new Promise((r) => setTimeout(r, 80));
+      expect(tipos).toContain("sistema");
+    } finally {
+      dejar();
+    }
   });
 
   it("rechaza un valor con comillas rectas y deja el archivo como estaba", async () => {

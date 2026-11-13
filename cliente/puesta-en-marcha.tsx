@@ -17,6 +17,7 @@ import {
 import type { EstadoApp, EstadoClave, EstadoPlantilla, PasoMeta, PasoPuesta, PeticionConectarMeta, Puesta } from "@/lib/api-tipos";
 import { LIMITES, textoPlantilla, type SectorPreset } from "@/lib/configuracion";
 import { PISTA_PUBLICAR, pasosMeta } from "@/lib/pasos-meta";
+import { pedirRefrescoConexiones } from "@/lib/refresco-conexiones";
 import type { Bd, Lead } from "@/lib/tipos";
 import { conectarMeta, crearPlantillas, guardarClave, leerClaves, leerPlantillas } from "./api-sistema";
 import { ATRIBUTOS_CLAVE, CampoClave, ClaveGuardada, ESTILOS, fraseDeError } from "./campo-clave";
@@ -1012,6 +1013,8 @@ function PasoWhatsApp(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar: () 
         if (r.siguiente === null) {
           setConectado(true);
           marcarHecho("whatsapp");
+          // La línea de estado deja el rojo de «WhatsApp no está conectado» sin esperar a recargar.
+          pedirRefrescoConexiones("conectar");
           break;
         }
         peticion = { paso: r.siguiente };
@@ -1538,6 +1541,7 @@ function PasoPrimerOficial(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar
   const conFormulario = config.web?.entrada === "formulario";
   const { estado: conexiones } = useConexiones();
   const [numero, setNumero] = useState(estado.numero);
+  const [buscandoNumero, setBuscandoNumero] = useState(true);
   const [copiado, setCopiado] = useState(false);
   const [fase, setFase] = useState<Fase["fase"]>("esperando");
   const [pista, setPista] = useState(false);
@@ -1557,23 +1561,33 @@ function PasoPrimerOficial(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar
     if (estado.numero) setNumero(estado.numero);
   }, [estado.numero]);
 
-  // Sin número aún: se pregunta cada 5 s, como mucho un minuto.
+  // Sin número aún: se pregunta al momento y luego cada 5 s, como mucho un minuto. Mientras, «Buscando
+  // tu número…» en su sitio (nunca un hueco); si en un minuto no llega, la frase sin número.
   useEffect(() => {
     if (numero) return;
     const inicio = Date.now();
-    const intervalo = setInterval(async () => {
+    let parado = false;
+    let intervalo: ReturnType<typeof setInterval> | null = null;
+    const parar = () => {
+      parado = true;
+      if (intervalo !== null) clearInterval(intervalo);
+    };
+    const leer = async () => {
       if (Date.now() - inicio > MAXIMO_NUMERO_MS) {
-        clearInterval(intervalo);
+        parar();
+        if (montado.current) setBuscandoNumero(false);
         return;
       }
       const r = await pedir("/api/estado");
       const leido = r.ok ? (r.datos.numero as EstadoApp["numero"] | undefined) : undefined;
-      if (leido && montado.current) {
+      if (leido && montado.current && !parado) {
         setNumero(leido);
-        clearInterval(intervalo);
+        parar();
       }
-    }, RELEER_NUMERO_MS);
-    return () => clearInterval(intervalo);
+    };
+    void leer();
+    intervalo = setInterval(() => void leer(), RELEER_NUMERO_MS);
+    return parar;
   }, [numero]);
 
   // La pista de «¿No llega?» tras un minuto sin mensaje.
@@ -1703,6 +1717,11 @@ function PasoPrimerOficial(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar
                 )}
               </div>
             </div>
+          ) : buscandoNumero ? (
+            <div className="flex min-w-0 flex-col gap-1" aria-busy="true">
+              <p className="text-[32px] leading-10 font-medium tracking-[-0.01em] text-secundario/70">Buscando tu número…</p>
+              <p className="text-[14px] leading-5 text-secundario">Escríbele «Hola» desde tu móvil</p>
+            </div>
           ) : (
             <p className="text-[15px] leading-6 text-tinta">Escríbele «Hola» al número de tu negocio desde tu móvil.</p>
           )}
@@ -1749,6 +1768,9 @@ function PasoPrimerOficial(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar
 // ─── Pantalla final ──────────────────────────────────────────────────────────────────────────────
 
 function Final(p: { bienvenida: EstadoPlantilla["estado"] | null; conFormulario: boolean; prueba: boolean }): JSX.Element {
+  // La puesta en marcha ha terminado: el panel vuelve a mirar las conexiones ya, saltando la caché,
+  // para que al pulsar «Abrir mi CRM» la línea de estado esté en verde.
+  useEffect(() => pedirRefrescoConexiones("puesta-terminada"), []);
   const aprobada = p.bienvenida === "APROBADA";
   const texto = p.prueba
     ? "En modo prueba, tu asistente contesta a los números de tu lista. Para clientes de verdad, pasa a WhatsApp oficial desde Ajustes → Conexiones."
@@ -1771,6 +1793,7 @@ function Final(p: { bienvenida: EstadoPlantilla["estado"] | null; conFormulario:
       <button
         type="button"
         onClick={() => {
+          pedirRefrescoConexiones("puesta-terminada");
           cerrar();
           irA("hoy");
         }}

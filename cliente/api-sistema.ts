@@ -11,6 +11,7 @@ import type {
 } from "@/lib/api-tipos";
 import type { IdModelo } from "@/lib/configuracion";
 import type { CodigoError } from "@/lib/errores";
+import { pedirRefrescoConexiones } from "@/lib/refresco-conexiones";
 
 // Envoltorios finos de las rutas del sistema: devuelven lo que dice el servidor o su error en español.
 // El valor de una clave nunca se escribe en la consola ni se guarda en el módulo.
@@ -101,6 +102,8 @@ export async function guardarClave(
 ): Promise<{ ok: true; terminaEn: string; nota?: string } | { ok: false; error: string; codigo?: CodigoError; guardada?: boolean }> {
   const r = await pedir("/api/claves", { nombre, valor });
   const d = r.datos;
+  // Guardada (también con un aviso): la línea de estado y Conexiones vuelven a mirar al momento.
+  if (r.ok && (d?.ok !== false || d?.guardada === true)) pedirRefrescoConexiones("clave");
   // Un 400 (ErrorApi) o un 200 { ok: false, guardada: true, codigo: "claude.saldo" }: se devuelven igual.
   if (!r.ok || d?.ok === false) {
     const fallo: { ok: false; error: string; codigo?: CodigoError; guardada?: boolean } = { ok: false, error: r.ok ? (texto(d?.error) ?? "No se ha podido guardar la clave.") : r.error };

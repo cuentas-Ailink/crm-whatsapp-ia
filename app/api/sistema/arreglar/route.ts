@@ -1,4 +1,5 @@
 import type { ErrorApi } from "@/lib/api-tipos";
+import { cambioDeSistema } from "@/lib/cambio-sistema";
 import { logError } from "@/lib/log";
 import { apuntarWebhook, suscribirApp } from "@/lib/meta";
 import { estadoConexiones } from "@/lib/sistema";
@@ -21,13 +22,6 @@ function metaConectada(): boolean {
   return e("WHATSAPP_TOKEN") && e("WHATSAPP_PHONE_NUMBER_ID") && e("WHATSAPP_BUSINESS_ACCOUNT_ID") && e("META_APP_SECRET");
 }
 
-/** Lo guardado de las conexiones (lib/sistema.ts) se olvida: la respuesta mira todo otra vez. */
-function olvidarConexiones(): void {
-  const g = globalThis as unknown as { __sistemaConexiones?: unknown; __sistemaComprobaciones?: unknown };
-  delete g.__sistemaConexiones;
-  delete g.__sistemaComprobaciones;
-}
-
 export async function POST(request: Request) {
   const cuerpo = (await request.json().catch(() => undefined)) as { que?: unknown } | null | undefined;
   if (cuerpo === undefined || typeof cuerpo !== "object" || cuerpo === null || Array.isArray(cuerpo)) {
@@ -47,6 +41,7 @@ export async function POST(request: Request) {
     // El estado nuevo dice qué sigue fallando.
     logError(`al arreglar la conexión (${arreglo})`, error);
   }
-  olvidarConexiones();
+  // Lo guardado se olvida (la respuesta mira todo otra vez) y las demás pestañas también vuelven a mirar.
+  cambioDeSistema();
   return Response.json(await estadoConexiones({ forzar: true }));
 }

@@ -2,14 +2,16 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type JSX, type ReactNode } from "react";
 import type { EstadoApp, EstadoConexiones } from "@/lib/api-tipos";
+import { alPedirRefrescoConexiones, crearRefrescoConexiones, motivoDeEvento, type RefrescoConexiones } from "@/lib/refresco-conexiones";
 import { alCambiarConfiguracion, escucharEventos } from "./datos";
 
 // El estado de la aplicación (GET /api/estado) y el de las conexiones (GET /api/sistema) para todo el panel.
 // /api/estado: al montar, cada 30 s con la pestaña visible, al volver a ella y cuando cambia el sistema o la
-// configuración. /api/sistema: solo mientras algún componente usa useConexiones(), y luego cada 5 min.
+// configuración. /api/sistema: solo mientras algún componente usa useConexiones(): al empezar, cada 5 min
+// y al momento cuando algo lo cambia (lib/refresco-conexiones.ts): el fin de la puesta en marcha,
+// «Conectar», una clave guardada, el modo prueba o un cambio «sistema» del servidor.
 
 const ESTADO_MS = 30_000;
-const CONEXIONES_MS = 5 * 60_000;
 
 /** Sin sesión en modo servidor: a la pantalla de entrar, volviendo luego a donde estaba. */
 function irAEntrar(): void {
@@ -46,8 +48,6 @@ export function ProveedorSistema(p: { children: ReactNode }): JSX.Element {
   const [conexiones, setConexiones] = useState<EstadoConexiones | null>(null);
   const ultimoEstado = useRef(0);
   const ultimaConexion = useRef(0);
-  const suscriptores = useRef(0);
-  const intervaloConexiones = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const cargarEstado = useCallback(async () => {
     const peticion = ++ultimoEstado.current;
@@ -83,23 +83,25 @@ export function ProveedorSistema(p: { children: ReactNode }): JSX.Element {
     };
   }, [cargarEstado]);
 
-  // /api/sistema solo se pide mientras alguien lo mira: la primera vez con el primer suscriptor.
-  const suscribir = useCallback(() => {
-    suscriptores.current++;
-    if (suscriptores.current === 1) {
-      void comprobar();
-      intervaloConexiones.current = setInterval(() => {
-        if (document.visibilityState === "visible") void comprobar();
-      }, CONEXIONES_MS);
-    }
+  // /api/sistema solo se pide mientras alguien lo mira: la primera vez con el primer suscriptor, de
+  // fondo cada 5 min y, al momento, con cada aviso de esta pestaña o del servidor (juntos si llegan seguidos).
+  const [refresco] = useState<RefrescoConexiones>(() =>
+    crearRefrescoConexiones({ comprobar, visible: () => document.visibilityState === "visible" }),
+  );
+  const suscribir = refresco.suscribir;
+
+  useEffect(() => {
+    const dejarAvisos = alPedirRefrescoConexiones((motivo) => refresco.pedir(motivo));
+    const dejarEventos = escucharEventos((e) => {
+      const motivo = motivoDeEvento(e);
+      if (motivo) refresco.pedir(motivo);
+    });
     return () => {
-      suscriptores.current--;
-      if (suscriptores.current === 0 && intervaloConexiones.current !== null) {
-        clearInterval(intervaloConexiones.current);
-        intervaloConexiones.current = null;
-      }
+      dejarAvisos();
+      dejarEventos();
+      refresco.parar();
     };
-  }, [comprobar]);
+  }, [refresco]);
 
   const valor = useMemo(() => ({ estado, conexiones, suscribir, comprobar }), [estado, conexiones, suscribir, comprobar]);
   return <Contexto.Provider value={valor}>{p.children}</Contexto.Provider>;

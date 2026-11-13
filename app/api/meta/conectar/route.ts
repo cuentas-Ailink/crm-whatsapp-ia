@@ -1,4 +1,5 @@
 import type { ErrorApi, PasoMeta, PeticionConectarMeta } from "@/lib/api-tipos";
+import { cambioDeSistema, olvidarConexiones } from "@/lib/cambio-sistema";
 import { conectarPaso } from "@/lib/meta";
 import { modoWhatsApp } from "@/lib/modo-prueba";
 
@@ -28,5 +29,10 @@ export async function POST(request: Request) {
     if (/[\r\n\0]/.test(valor) || valor.length > MAXIMO) return errorApi("Revisa lo que has pegado: tiene un salto de línea", campo);
     if (valor) peticion[campo] = valor;
   }
-  return Response.json(await conectarPaso(peticion));
+  const resultado = await conectarPaso(peticion);
+  // Cada paso puede cambiar la realidad (cuenta, número, suscripción, webhook): lo guardado de
+  // /api/sistema se olvida siempre, y al panel se le avisa cuando la vuelta acaba (bien o con un fallo).
+  if (resultado.ok && resultado.siguiente !== null) olvidarConexiones();
+  else cambioDeSistema();
+  return Response.json(resultado);
 }

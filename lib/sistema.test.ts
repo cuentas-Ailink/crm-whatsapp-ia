@@ -2,12 +2,14 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { POST as postActivo } from "@/app/api/asistente/activo/route";
 import { POST as postModelo } from "@/app/api/asistente/modelo/route";
 import { POST as postAviso } from "@/app/api/avisos/prueba/route";
+import { POST as postConectar } from "@/app/api/meta/conectar/route";
 import { POST as postArreglar } from "@/app/api/sistema/arreglar/route";
 import { GET as getSistema } from "@/app/api/sistema/route";
 import { POST as postWhatsApp } from "@/app/api/whatsapp/prueba/route";
 import type { EstadoConexiones, FilaConexion } from "./api-tipos";
 import * as aviso from "./aviso";
 import * as bd from "./bd";
+import { cambioDeSistema } from "./cambio-sistema";
 import * as claves from "./claves";
 import type { ConfiguracionResuelta } from "./configuracion";
 import * as cs from "./configuracion-servidor";
@@ -31,6 +33,7 @@ vi.mock("./meta", () => ({
   numeros: vi.fn(),
   apuntarWebhook: vi.fn(),
   suscribirApp: vi.fn(),
+  conectarPaso: vi.fn(),
 }));
 vi.mock("./tunel", () => ({
   abrirTunel: vi.fn(),
@@ -593,6 +596,55 @@ describe("estadoConexiones", () => {
     vi.setSystemTime(new Date("2026-11-12T10:02:13Z"));
     await estadoConexiones();
     expect(meta.appDelToken).toHaveBeenCalledTimes(3);
+  });
+
+  // W29: al acabar la puesta en marcha la línea de estado seguía en rojo hasta recargar, porque lo
+  // guardado de /api/sistema (y ?forzar=1 en sus primeros 10 s) devolvía el «Sin conectar» de antes.
+  it("lo que cambia las conexiones olvida lo guardado y avisa al panel", async () => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-11-12T10:00:00Z"));
+    delete process.env.META_APP_SECRET;
+    expect(filaDe(await estadoConexiones(), "whatsapp")?.estado).toBe("error");
+
+    // Se guarda la clave que faltaba: sin olvidar, lo guardado sigue en rojo (también forzando a los 5 s).
+    process.env.META_APP_SECRET = SECRETOS.META_APP_SECRET;
+    vi.setSystemTime(new Date("2026-11-12T10:00:05Z"));
+    expect(filaDe(await estadoConexiones(), "whatsapp")?.estado).toBe("error");
+    expect(filaDe(await estadoConexiones({ forzar: true }), "whatsapp")?.estado).toBe("error");
+
+    vi.mocked(eventos.avisarCambio).mockClear();
+    cambioDeSistema();
+    expect(eventos.avisarCambio).toHaveBeenCalledWith("sistema");
+    const despues = await estadoConexiones();
+    expect(filaDe(despues, "whatsapp")?.estado).toBe("ok");
+    expect(despues.resumen).toBe("ok");
+  });
+
+  it("«Conectar» olvida lo guardado en cada paso y avisa al panel cuando la vuelta acaba", async () => {
+    const pedir = (paso: string) => postConectar(new Request("http://x/api/meta/conectar", { method: "POST", body: JSON.stringify({ paso }) }));
+    delete process.env.META_APP_SECRET;
+    expect(filaDe(await estadoConexiones(), "whatsapp")?.estado).toBe("error");
+    process.env.META_APP_SECRET = SECRETOS.META_APP_SECRET;
+
+    vi.mocked(meta.conectarPaso).mockResolvedValueOnce({ paso: "webhook", ok: true, texto: "Meta avisa a este ordenador", siguiente: "firma" });
+    await pedir("webhook");
+    expect(eventos.avisarCambio).not.toHaveBeenCalled();
+    expect(filaDe(await estadoConexiones(), "whatsapp")?.estado).toBe("ok");
+
+    vi.mocked(meta.conectarPaso).mockResolvedValueOnce({ paso: "firma", ok: true, texto: "Firma comprobada", siguiente: null });
+    await pedir("firma");
+    expect(eventos.avisarCambio).toHaveBeenCalledWith("sistema");
+
+    vi.mocked(eventos.avisarCambio).mockClear();
+    vi.mocked(meta.conectarPaso).mockResolvedValueOnce({ paso: "cuenta", ok: false, texto: "No encuentro tu cuenta de WhatsApp", siguiente: null });
+    await pedir("cuenta");
+    expect(eventos.avisarCambio).toHaveBeenCalledWith("sistema");
+  });
+
+  it("«Arreglar» también avisa al panel", async () => {
+    await estadoConexiones();
+    await postArreglar(new Request("http://x/api/sistema/arreglar", { method: "POST", body: JSON.stringify({ que: "webhook" }) }));
+    expect(eventos.avisarCambio).toHaveBeenCalledWith("sistema");
   });
 
   it("completo trae la lista de comprobaciones", async () => {

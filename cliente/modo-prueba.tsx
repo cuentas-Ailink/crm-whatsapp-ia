@@ -4,6 +4,7 @@ import { Check, Plus, X } from "lucide-react";
 import { useCallback, useEffect, useId, useRef, useState, type JSX, type ReactNode } from "react";
 import { MAXIMO_PERMITIDOS, type EstadoModoPrueba } from "@/lib/modo-prueba-reglas";
 import { qrSvg } from "@/lib/qr";
+import { pedirRefrescoConexiones } from "@/lib/refresco-conexiones";
 import { formatoTelefono } from "@/lib/regional";
 import { ESTILOS } from "./campo-clave";
 import { ESTILOS_TOQUE } from "./configuracion/controles";
@@ -43,7 +44,10 @@ async function pedir(cuerpo?: Record<string, unknown>): Promise<Resultado> {
 export function accionModoPrueba(accion: "activar" | "preparar" | "permitidos" | "desvincular" | "oficial", extra: Record<string, unknown> = {}): Promise<Resultado> {
   return pedir({ accion, ...extra }).then((r) => {
     // El resto del panel (la línea de estado, Conexiones, la puesta en marcha) vuelve a mirar.
-    if (r.ok) avisarCambioDeConfiguracion();
+    if (r.ok) {
+      avisarCambioDeConfiguracion();
+      pedirRefrescoConexiones("modo-prueba");
+    }
     return r;
   });
 }
@@ -53,6 +57,15 @@ export function useModoPrueba(vigilar: boolean): { estado: EstadoModoPrueba | nu
   const [estado, setEstado] = useState<EstadoModoPrueba | null>(null);
   const [error, setError] = useState<string | null>(null);
   const montado = useRef(true);
+  const vinculado = estado === null ? null : estado.puente.fase === "conectado";
+  const vinculadoAntes = useRef<boolean | null>(null);
+
+  // El móvil se acaba de vincular (o se ha soltado): la línea de estado vuelve a mirar al momento.
+  useEffect(() => {
+    if (vinculado === null) return;
+    if (vinculadoAntes.current !== null && vinculadoAntes.current !== vinculado) pedirRefrescoConexiones("modo-prueba");
+    vinculadoAntes.current = vinculado;
+  }, [vinculado]);
 
   const releer = useCallback(async () => {
     const r = await pedir();

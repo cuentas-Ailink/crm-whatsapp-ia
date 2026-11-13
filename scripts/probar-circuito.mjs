@@ -87,6 +87,23 @@ async function api(ruta, cuerpo) {
 }
 const getJson = async (ruta) => (await api(ruta)).json;
 const estadoApp = () => getJson("/api/estado");
+/** Una fila de /api/sistema (claude, whatsapp, mensajes, datos, acceso). */
+const filaSistema = (estado, id) => estado?.filas?.find((f) => f.id === id);
+/**
+ * Lo que pinta la línea de estado del panel con ese /api/sistema (cliente/linea-estado.tsx, calcularLinea,
+ * con la puesta en marcha hecha y el asistente encendido): la primera fila en rojo o «Todo funciona».
+ */
+const TEXTO_ROJO = {
+  acceso: "El panel se puede abrir desde internet · Ver",
+  datos: "No llego a tus datos · Arreglar",
+  whatsapp: "WhatsApp no está conectado · Arreglar",
+  mensajes: "WhatsApp no recibe mensajes · Arreglar",
+  claude: "Tu asistente no puede contestar · Arreglar",
+};
+const lineaDelPanel = (estado) => {
+  for (const id of ["acceso", "datos", "whatsapp", "mensajes", "claude"]) if (filaSistema(estado, id)?.estado === "error") return TEXTO_ROJO[id];
+  return estado ? "Todo funciona" : "sin respuesta";
+};
 
 function cuerpoWebhook(telefono, nombre, mensaje) {
   return JSON.stringify({
@@ -1662,6 +1679,9 @@ async function modoNuevo(estado) {
       );
       process.exit(1);
     }
+    // Como el panel al abrirse: pide /api/sistema antes de nada y el servidor se lo guarda (en rojo).
+    const alAbrir = await getJson("/api/sistema");
+    comprobar("al abrir el panel, WhatsApp sale sin conectar", filaSistema(alAbrir, "whatsapp")?.estado === "error", JSON.stringify(filaSistema(alAbrir, "whatsapp")));
 
     seccion("Claves");
     let claves = (await getJson("/api/claves"))?.claves ?? [];
@@ -1724,6 +1744,9 @@ async function modoNuevo(estado) {
 
     seccion("Conectar con los códigos guardados");
     const paso = (cuerpo) => api("/api/meta/conectar", cuerpo);
+    const eventosConectar = abrirEventos();
+    await esperar(300);
+    const antesDeConectar = Date.now();
     // Como la pantalla: «Conectar» sin nada escrito empieza por las claves guardadas y sigue cada «siguiente».
     const verdes = [];
     let siguiente = "claves";
@@ -1746,6 +1769,17 @@ async function modoNuevo(estado) {
           ["firma", true, "Firma comprobada"],
         ]),
       JSON.stringify(verdes),
+    );
+    // W29: la línea de estado no puede seguir en rojo hasta recargar. El servidor avisa con un cambio
+    // «sistema» (el panel vuelve a pedir /api/sistema) y lo que contesta ya es lo nuevo, sin esperar.
+    const avisoSistema = await eventosConectar.esperar((e) => e.tipo === "cambio" && e.datos?.tipo === "sistema" && e.recibidoEn >= antesDeConectar, 3_000);
+    eventosConectar.cerrar();
+    comprobar("al acabar «Conectar», el servidor avisa al panel de un cambio «sistema»", !!avisoSistema);
+    const trasConectar = await getJson("/api/sistema");
+    comprobar(
+      "y /api/sistema ya dice que WhatsApp está conectado, sin esperar ni recargar",
+      filaSistema(trasConectar, "whatsapp")?.estado === "ok" && filaSistema(trasConectar, "whatsapp")?.detalle === "+34 600 000 000 · Estudio de prueba",
+      JSON.stringify(filaSistema(trasConectar, "whatsapp")),
     );
 
     seccion("Conectar WhatsApp");
@@ -1849,6 +1883,16 @@ async function modoNuevo(estado) {
     comprobar("le contesta", !!respuesta?.texto, respuesta?.texto);
     const primer = await hasta(async () => ((await estadoApp())?.puesta?.primerMensaje === true ? true : null), 15_000);
     comprobar("y la puesta en marcha se completa", !!primer);
+    // W29: «Todo funciona.» → «Abrir mi CRM». El panel pide /api/sistema?forzar=1 al momento (nada de
+    // esperar 5 minutos ni recargar) y la línea de estado sale en verde: ninguna fila en rojo.
+    const alTerminar = await getJson("/api/sistema?forzar=1");
+    const enRojo = (alTerminar?.filas ?? []).filter((f) => f.estado === "error");
+    comprobar(
+      "al terminar la puesta en marcha, /api/sistema dice «ok» sin esperar",
+      alTerminar?.resumen === "ok" && enRojo.length === 0,
+      JSON.stringify(alTerminar?.filas?.map((f) => [f.id, f.estado, f.detalle])),
+    );
+    comprobar("y la línea de estado del panel sale en verde («Todo funciona»)", lineaDelPanel(alTerminar) === "Todo funciona", lineaDelPanel(alTerminar));
     const final = await estadoApp();
     comprobar(
       "el número del negocio, con su enlace",

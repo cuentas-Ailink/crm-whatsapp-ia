@@ -8,6 +8,7 @@ import { chmod, mkdir, readFile, rename, rm, writeFile } from "node:fs/promises"
 import path from "node:path";
 import * as envNext from "@next/env";
 import type { EstadoClave, NombreClave } from "./api-tipos";
+import { cambioDeSistema } from "./cambio-sistema";
 import { explicar, explicarClaude, type ErrorExplicado } from "./errores";
 import { log } from "./log";
 
@@ -233,6 +234,8 @@ export async function guardarClave(
       return { ok: false, error: `No se ha podido guardar la clave: ${motivoDe(error)}` };
     }
     process.env[nombre] = valor;
+    // Con la clave nueva, /api/sistema vuelve a mirar y el panel lo pide al momento.
+    cambioDeSistema();
     const final = terminaEn(valor) ?? "";
     log(`Clave guardada: ${nombre} (termina en ${final})`);
     return { ok: true, terminaEn: final };
@@ -249,6 +252,7 @@ export async function borrarClave(nombre: NombreClave): Promise<void> {
     if (nuevo === anterior) return;
     await escribirArchivo(archivo, nuevo);
     delete process.env[nombre];
+    cambioDeSistema();
     log(`Clave borrada: ${nombre}`);
   });
 }

@@ -9,6 +9,7 @@
 import { spawn, type ChildProcess } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { cambioDeSistema } from "./cambio-sistema";
 import { log, logError } from "./log";
 import {
   FECHA_PIEZAS,
@@ -252,6 +253,14 @@ export async function arrancarPuente(reintento = false): Promise<void> {
 
 /** Cómo está el puente ahora mismo (le pregunta; si no contesta, lo último que se sabe). */
 export async function consultarPuente(): Promise<EstadoPuente> {
+  const antes = interno().ultimo;
+  const ahora = await preguntarPuente();
+  // El móvil se acaba de vincular o desvincular: el panel vuelve a mirar las conexiones al momento.
+  if ((antes.fase === "conectado") !== (ahora.fase === "conectado") || (ahora.fase === "conectado" && antes.numero !== ahora.numero)) cambioDeSistema();
+  return ahora;
+}
+
+async function preguntarPuente(): Promise<EstadoPuente> {
   const i = interno();
   if (modoWhatsApp() !== "prueba") return (i.ultimo = { ...PARADO });
   try {

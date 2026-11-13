@@ -1,7 +1,7 @@
 import type { ErrorApi } from "@/lib/api-tipos";
+import { cambioDeSistema } from "@/lib/cambio-sistema";
 import { telefonoComercial } from "@/lib/configuracion";
 import { configuracionParaPintar } from "@/lib/configuracion-servidor";
-import { avisarCambio } from "@/lib/eventos";
 import { log, logError } from "@/lib/log";
 import { activarModoPrueba, borrarModoPrueba, guardarPermitidos, leerModoPrueba } from "@/lib/modo-prueba";
 import { consultarPuente, desvincularPuente, estadoInstalacion, prepararModoPrueba } from "@/lib/modo-prueba-puente";
@@ -50,13 +50,6 @@ async function estado(): Promise<EstadoModoPrueba> {
   };
 }
 
-/** Lo guardado de las conexiones (lib/sistema.ts) se olvida: lo siguiente mira todo otra vez. */
-function olvidarConexiones(): void {
-  const g = globalThis as unknown as { __sistemaConexiones?: unknown; __sistemaComprobaciones?: unknown };
-  delete g.__sistemaConexiones;
-  delete g.__sistemaComprobaciones;
-}
-
 export async function GET(request: Request) {
   const negado = negar(request);
   if (negado) return negado;
@@ -97,7 +90,6 @@ export async function POST(request: Request) {
     logError(`en el modo prueba (${accion})`, error);
     return errorApi(500, "No se ha podido hacer. Vuelve a intentarlo en un momento.");
   }
-  olvidarConexiones();
-  avisarCambio("sistema");
+  cambioDeSistema();
   return Response.json(await estado());
 }
