@@ -264,7 +264,7 @@ export function Formulario(p: { textos: Omit<Portada["formulario"], "zona">; neg
             aria-hidden
             className="mt-px flex size-4 shrink-0 items-center justify-center rounded-[5px] border border-white/60 transition-colors duration-200 ease-out peer-checked:bg-white peer-focus-visible:outline-2 peer-focus-visible:outline-white"
           >
-            {acepta && <Check className="size-3 text-[#111]" strokeWidth={2.5} />}
+            {acepta && <Check className="size-3 text-navy" strokeWidth={2.5} />}
           </span>
           <span>
             {conNegocio(textos.consentimiento, negocio)}
@@ -295,7 +295,7 @@ export function Formulario(p: { textos: Omit<Portada["formulario"], "zona">; neg
         <button
           type="submit"
           disabled={enviando}
-          className="mt-1 flex h-[52px] w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-white text-[15px] font-semibold text-[#111] transition-colors duration-200 ease-out hover:bg-[#e4e2de] disabled:cursor-wait"
+          className="mt-1 flex h-[52px] w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-white text-[15px] font-semibold text-navy transition-colors duration-200 ease-out hover:bg-relleno disabled:cursor-wait"
         >
           {enviando ? (
             <>
@@ -313,7 +313,7 @@ export function Formulario(p: { textos: Omit<Portada["formulario"], "zona">; neg
         aria-hidden={!enviado}
         className={`absolute inset-0 flex flex-col items-center justify-center gap-3 p-8 text-center transition-opacity duration-300 ease-out ${enviado ? "opacity-100" : "pointer-events-none opacity-0"}`}
       >
-        <span className="mb-2 flex size-14 items-center justify-center rounded-full bg-white text-[#111]">
+        <span className="mb-2 flex size-14 items-center justify-center rounded-full bg-white text-navy">
           <Check className="size-6" strokeWidth={1.5} />
         </span>
         <p className="text-[32px] leading-[1.1] font-light tracking-[-0.02em]">{conNegocio(textos.enviado[0], negocio)}</p>

@@ -1,34 +1,44 @@
 @import "tailwindcss";
 
 /* Tokens comunes de la web y del panel. */
+/* Flexibility design system: navy is the voice, red is a pointer, teal only on dark, #eef3f6 / #f7f8f9 as neutrals. */
 @theme {
-  --font-sans: var(--fuente-inter), "Helvetica Neue", Arial, sans-serif;
-  --font-mono: var(--fuente-mono), ui-monospace, Menlo, monospace;
+  --font-sans: var(--fuente-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--fuente-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --font-wordmark: "Helvetica Neue Bold Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, sans-serif;
 
-  --color-tinta: #141414;
-  --color-secundario: #6b6b6b;
-  --color-fondo: #ecebe8;
+  --color-navy: #022a3a;
+  --color-navy-hover: #0b3c50;
+  --color-rojo: #e60000;
+  --color-teal: #4accd4;
+  --color-teal-claro: #78dde3;
+  --color-relleno: #e3eaef;
+  --color-linea-fuerte: #c9d4db;
+
+  --color-tinta: #022a3a;
+  --color-secundario: #4d6774;
+  --color-fondo: #eef3f6;
 
   /* Un color, un significado: verde = hecho, ámbar = te toca, rojo = algo falla, gris = nada que hacer. */
   --color-ok: #2f9e6e;
   --color-ok-texto: #23794f;
   --color-atencion: #d9932f;
   --color-atencion-texto: #a8661a;
-  --color-error: #e0584b;
-  --color-error-texto: #c23d30;
+  --color-error: #e60000;
+  --color-error-texto: #c40000;
   --color-nuevo: #a3a9b5;
   --color-conversacion: #6b7a90;
   --color-spam: #a8a39b;
   --color-visita: var(--color-ok);
   --color-persona: var(--color-atencion);
-  --color-marca: #2f9e6e;
-  --color-marca-texto: #0c2a1d;
+  --color-marca: #022a3a;
+  --color-marca-texto: #ffffff;
   --animate-escribiendo: escribiendo 1.2s ease-in-out infinite;
   --animate-progreso: progreso 1.4s ease-in-out infinite;
 
   /* Panel tipo CRM: el lienzo de trabajo y las líneas finas que separan. */
-  --color-lienzo: #f6f5f3;
-  --color-linea: #e3e2de;
+  --color-lienzo: #f7f8f9;
+  --color-linea: #dde5ea;
 
   --ease-salida: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -68,12 +78,34 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Etiquetas pequeñas en mayúsculas, solo en DM Mono. */
+/* Small uppercase labels: Montserrat Bold, tracked .12em (Flexibility label style). */
 .etiqueta-mono {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
-  letter-spacing: 0.14em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.font-mono {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Display headlines: Montserrat Extrabold with tight tracking (base layer, so utilities still win). */
+@layer base {
+  h1,
+  h2 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Wordmarks only (flexibility, plug, pay): bold condensed, lowercase. */
+.wordmark {
+  font-family: var(--font-wordmark);
+  font-weight: 700;
+  font-stretch: condensed;
+  text-transform: lowercase;
 }
 
 /* En un móvil, los tres enlaces y «Contacto» tienen que caber en la barra fija. */

@@ -40,7 +40,7 @@ const DEGRADADO_MARCA: CSSProperties = {
 
 export function FondoMarca() {
   return (
-    <div aria-hidden className="absolute inset-0 bg-[#141414]">
+    <div aria-hidden className="absolute inset-0 bg-navy">
       <div className="absolute inset-0" style={DEGRADADO_MARCA} />
     </div>
   );
@@ -238,7 +238,7 @@ function Proceso({ config, numero, enlace }: { config: ConfiguracionResuelta; nu
   // El principio (la bienvenida o el mensaje del botón) y luego el resto, con los huecos de su agenda.
   const conversacion: MensajeEjemplo[] = [...inicioEjemplo(config), ...lineasEjemplo(proceso.ejemplo, huecos)];
   const claseBoton =
-    "mt-10 inline-flex h-[52px] items-center rounded-full bg-white px-8 text-[15px] font-semibold text-[#111] transition-colors duration-200 ease-out hover:bg-[#e4e2de]";
+    "mt-10 inline-flex h-[52px] items-center rounded-full bg-white px-8 text-[15px] font-semibold text-navy transition-colors duration-200 ease-out hover:bg-relleno";
   const foto = fotoValida(proceso.foto);
   const privacidad = urlPrivacidad(formulario.urlPrivacidad);
   const lema = config.negocio.lema.trim();
@@ -248,7 +248,7 @@ function Proceso({ config, numero, enlace }: { config: ConfiguracionResuelta; nu
       {foto ? (
         <>
           <img src={foto} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,10,8,0.84)_0%,rgba(12,10,8,0.7)_55%,rgba(12,10,8,0.46)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,42,58,0.84)_0%,rgba(2,42,58,0.7)_55%,rgba(2,42,58,0.46)_100%)]" />
         </>
       ) : (
         <FondoMarca />

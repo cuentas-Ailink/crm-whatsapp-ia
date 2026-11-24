@@ -362,7 +362,7 @@ export function Interruptor(p: { id?: string; marcado: boolean; cambiar: (v: boo
       disabled={p.desactivado}
       onClick={() => p.cambiar(!p.marcado)}
       className={`relative inline-flex h-6 w-[42px] shrink-0 cursor-pointer items-center rounded-full transition-colors duration-200 ease-out disabled:cursor-default max-lg:after:absolute max-lg:after:-inset-2.5 max-lg:after:content-[''] ${
-        p.marcado ? "bg-ok" : "bg-[#d5d4d0]"
+        p.marcado ? "bg-ok" : "bg-relleno"
       } ${FOCO}`}
     >
       <span
@@ -425,7 +425,7 @@ export function Segmentado<T extends string>(p: {
               if (!activo) p.cambiar(o.valor);
             }}
             className={`flex min-h-8 flex-col items-center justify-center rounded-[7px] px-3.5 py-1 text-[13px] leading-[18px] max-lg:min-h-11 max-lg:flex-1 transition-colors duration-150 ease-out ${FOCO} ${
-              activo ? "cursor-default bg-white font-medium text-tinta shadow-[0_1px_2px_rgba(20,20,20,0.1)]" : "cursor-pointer text-secundario hover:text-tinta"
+              activo ? "cursor-default bg-white font-medium text-tinta shadow-[0_1px_2px_rgba(2,42,58,0.1)]" : "cursor-pointer text-secundario hover:text-tinta"
             }`}
           >
             <span>{o.texto}</span>

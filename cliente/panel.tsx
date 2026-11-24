@@ -364,14 +364,14 @@ function MarcoPanel({ bd, conectado, refrescar }: { bd: Bd; conectado: boolean; 
 
   return (
     <div className="min-h-screen bg-lienzo lg:grid lg:grid-cols-[240px_minmax(0,1fr)]">
-      <aside className="sticky top-0 hidden h-screen flex-col self-start bg-[#151515] px-3 pt-4 pb-3 text-white lg:flex">
+      <aside className="sticky top-0 hidden h-screen flex-col self-start bg-navy px-3 pt-4 pb-3 text-white lg:flex">
         <div className="flex items-start gap-2.5 px-1.5">
           {logo ? (
             <span className="flex h-10 max-w-[88px] shrink-0 items-center justify-center rounded-[8px] bg-white px-1.5">
               <img src={logo} alt="" className="max-h-8 w-auto object-contain" />
             </span>
           ) : (
-            <span aria-hidden className="flex size-9 shrink-0 items-center justify-center rounded-[8px] bg-marca text-[15px] font-semibold text-marca-texto">
+            <span aria-hidden className="flex size-9 shrink-0 items-center justify-center rounded-[8px] bg-marca text-[15px] font-semibold text-marca-texto ring-1 ring-teal/60">
               {nombre.charAt(0).toUpperCase()}
             </span>
           )}
@@ -382,7 +382,7 @@ function MarcoPanel({ bd, conectado, refrescar }: { bd: Bd; conectado: boolean; 
               target="_blank"
               rel="noopener"
               aria-label="Ver tu web (se abre en otra pestaña)"
-              className="inline-flex w-fit items-center gap-1 rounded-[4px] text-[12px] leading-4 text-white/55 transition-colors duration-150 ease-out hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70"
+              className="inline-flex w-fit items-center gap-1 rounded-[4px] text-[12px] leading-4 text-teal-claro transition-colors duration-150 ease-out hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70"
             >
               Ver tu web
               <ExternalLink aria-hidden className="size-3" strokeWidth={1.75} />
@@ -446,7 +446,7 @@ function MarcoPanel({ bd, conectado, refrescar }: { bd: Bd; conectado: boolean; 
 
       {/* Por debajo de 1024 px, la barra lateral se queda en esta barra de arriba con un menú. */}
       <div className="sticky top-0 z-30 lg:hidden">
-        <div className="flex h-14 items-center gap-1 bg-[#151515] pr-1.5 pl-4 text-white">
+        <div className="flex h-14 items-center gap-1 bg-navy pr-1.5 pl-4 text-white">
           {logo ? (
             <span className="flex h-9 max-w-[72px] shrink-0 items-center justify-center rounded-[8px] bg-white px-1.5">
               <img src={logo} alt="" className="max-h-7 w-auto object-contain" />
@@ -489,7 +489,7 @@ function MarcoPanel({ bd, conectado, refrescar }: { bd: Bd; conectado: boolean; 
                 </span>
               )}
               {linea.tono === "error" && (
-                <span className="absolute bottom-2 left-2 size-2.5 rounded-full bg-error ring-2 ring-[#151515]">
+                <span className="absolute bottom-2 left-2 size-2.5 rounded-full bg-error ring-2 ring-navy">
                   <span className="sr-only">{linea.texto}</span>
                 </span>
               )}
@@ -503,7 +503,7 @@ function MarcoPanel({ bd, conectado, refrescar }: { bd: Bd; conectado: boolean; 
             <div
               ref={hojaMenu}
               id={idMenu}
-              className="menu-movil absolute inset-x-0 top-14 flex max-h-[calc(100dvh-56px)] flex-col overflow-y-auto border-t border-white/10 bg-[#151515] px-3 pt-2 pb-3 text-white shadow-[0_16px_32px_rgba(0,0,0,0.25)]"
+              className="menu-movil absolute inset-x-0 top-14 flex max-h-[calc(100dvh-56px)] flex-col overflow-y-auto border-t border-white/10 bg-navy px-3 pt-2 pb-3 text-white shadow-[0_16px_32px_rgba(0,0,0,0.25)]"
             >
               <nav aria-label="Secciones del panel" className="flex flex-col gap-0.5">
                 {itemsNavegacion(true)}

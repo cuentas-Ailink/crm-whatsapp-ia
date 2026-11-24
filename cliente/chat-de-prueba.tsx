@@ -164,7 +164,7 @@ export function ChatDePrueba(p: { origen?: "formulario" | "whatsapp"; alContesta
                   if (origen !== o) empezar(o);
                 }}
                 className={`h-7 rounded-[6px] px-3 text-[13px] max-lg:min-h-11 max-lg:px-4 leading-[18px] transition-colors duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-tinta ${
-                  origen === o ? "cursor-default bg-white font-medium shadow-[0_1px_2px_rgba(20,20,20,0.08)]" : "cursor-pointer text-secundario hover:text-tinta"
+                  origen === o ? "cursor-default bg-white font-medium shadow-[0_1px_2px_rgba(2,42,58,0.08)]" : "cursor-pointer text-secundario hover:text-tinta"
                 }`}
               >
                 {o === "formulario" ? "Formulario" : "WhatsApp"}

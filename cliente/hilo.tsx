@@ -38,7 +38,7 @@ function Burbuja({ m, tipo, ultima }: { m: Mensaje; tipo: Grupo["tipo"]; ultima:
 
   return (
     <div
-      className={`relative max-w-[78%] rounded-[12px] px-3 pt-1.5 pb-1.5 text-[14px] leading-5 shadow-[0_1px_1px_rgba(20,20,20,0.05)] ${esquina} ${fondo} ${
+      className={`relative max-w-[78%] rounded-[12px] px-3 pt-1.5 pb-1.5 text-[14px] leading-5 shadow-[0_1px_1px_rgba(2,42,58,0.05)] ${esquina} ${fondo} ${
         deCliente ? "self-start" : "self-end"
       }`}
       style={!deCliente && tipo !== "manual" ? { background: FONDO_ASISTENTE } : undefined}
@@ -123,7 +123,7 @@ export function Hilo(p: { lead: Lead; escribiendo: boolean; ahora: number; conte
         {items.map((item, i) =>
           item.tipo === "dia" ? (
             <div key={`dia-${i}`} className="flex justify-center pt-1">
-              <span className="rounded-full bg-white/80 px-2.5 py-0.5 text-[12px] leading-4 text-secundario shadow-[0_1px_1px_rgba(20,20,20,0.04)]">
+              <span className="rounded-full bg-white/80 px-2.5 py-0.5 text-[12px] leading-4 text-secundario shadow-[0_1px_1px_rgba(2,42,58,0.04)]">
                 {item.texto}
               </span>
             </div>
