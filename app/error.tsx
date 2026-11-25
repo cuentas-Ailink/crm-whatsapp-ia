@@ -16,7 +16,7 @@ export default function ErrorDePagina({ error, retry }: { error: unknown; retry:
       <button
         type="button"
         onClick={() => retry()}
-        className="mt-8 inline-flex h-[52px] cursor-pointer items-center rounded-full bg-tinta px-8 text-[15px] font-semibold text-white transition-colors duration-200 ease-out hover:bg-[#2b2b2b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tinta"
+        className="mt-8 inline-flex h-[52px] cursor-pointer items-center rounded-full bg-tinta px-8 text-[15px] font-semibold text-white transition-colors duration-200 ease-out hover:bg-navy-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tinta"
       >
         Reintentar
       </button>

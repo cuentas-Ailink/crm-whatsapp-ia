@@ -460,7 +460,7 @@ function AvisoPrueba(p: { seguir: () => void; volver: () => void; aplazar: () =>
             type="checkbox"
             checked={acepto}
             onChange={(evento) => setAcepto(evento.target.checked)}
-            className="size-4 cursor-pointer accent-[#141414]"
+            className="size-4 cursor-pointer accent-navy"
           />
           Entiendo que es solo para probar
         </label>
@@ -675,7 +675,7 @@ function PasoNegocio(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar: () =
           <div className="flex flex-wrap items-center gap-4">
             {logo && esLogoSeguro(logo) ? (
               <div className="flex gap-2" aria-label="Así se ve tu logo" role="group">
-                <span className="flex size-16 items-center justify-center rounded-[10px] bg-[#151515] p-2">
+                <span className="flex size-16 items-center justify-center rounded-[10px] bg-navy p-2">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={logo} alt="Tu logo sobre fondo oscuro" className="max-h-full max-w-full object-contain" />
                 </span>
@@ -715,7 +715,7 @@ function PasoNegocio(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar: () =
         </div>
 
         <label className="flex w-fit cursor-pointer items-center gap-2.5 text-[14px] leading-5 text-tinta">
-          <input type="checkbox" checked={ejemplos} onChange={(evento) => setEjemplos(evento.target.checked)} className="size-4 cursor-pointer accent-[#141414]" />
+          <input type="checkbox" checked={ejemplos} onChange={(evento) => setEjemplos(evento.target.checked)} className="size-4 cursor-pointer accent-navy" />
           Cargar clientes de ejemplo para ver cómo queda
         </label>
 
@@ -1194,7 +1194,7 @@ function PasoWhatsApp(p: { estado: EstadoApp; hechos: PasoPuesta[]; aplazar: () 
                         value={o.id}
                         checked={elegida === o.id}
                         onChange={() => setElegida(o.id)}
-                        className="size-4 cursor-pointer accent-[#141414]"
+                        className="size-4 cursor-pointer accent-navy"
                       />
                       {o.texto}
                     </label>

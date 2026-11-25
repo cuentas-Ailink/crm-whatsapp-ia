@@ -40,7 +40,7 @@ export default async function Inicio() {
         {foto ? (
           <>
             <img src={foto} alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-black/50 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgba(12,10,8,0.72)_0%,rgba(12,10,8,0.42)_45%,rgba(12,10,8,0.12)_100%)]" />
+            <div className="absolute inset-0 bg-black/50 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgba(2,42,58,0.72)_0%,rgba(2,42,58,0.42)_45%,rgba(2,42,58,0.12)_100%)]" />
           </>
         ) : (
           <FondoMarca />

@@ -36,7 +36,7 @@ export function ConversacionEjemplo({ mensajes }: { mensajes: MensajeEjemplo[] }
           className={
             mensaje.de === "agente"
               ? "max-w-[88%] self-start rounded-[18px] rounded-bl-[6px] border border-white/25 bg-white/10 px-3.5 py-2.5"
-              : "max-w-[88%] self-end rounded-[18px] rounded-br-[6px] bg-white px-3.5 py-2.5 text-[#111]"
+              : "max-w-[88%] self-end rounded-[18px] rounded-br-[6px] bg-white px-3.5 py-2.5 text-navy"
           }
         >
           {mensaje.texto}

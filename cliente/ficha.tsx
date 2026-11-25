@@ -622,7 +622,7 @@ function Notas({ lead, ahora, refrescar }: { lead: Lead; ahora: number; refresca
         checked={t.hecha}
         onChange={() => void operar(cambiarTarea(lead.id, t.id, !t.hecha), t.hecha ? "Pendiente reabierto" : "Pendiente hecho")}
         aria-label={`Hecho: ${t.texto}`}
-        className="mt-px size-4 shrink-0 cursor-pointer accent-[#141414]"
+        className="mt-px size-4 shrink-0 cursor-pointer accent-navy"
       />
       <span className={`min-w-0 flex-1 text-[13px] leading-[18px] break-words ${t.hecha ? "text-secundario line-through" : ""}`}>{t.texto}</span>
       {t.vence && !t.hecha && (

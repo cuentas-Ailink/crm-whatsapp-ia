@@ -886,7 +886,7 @@ function MensajeBienvenida({ datos, recargar, irABloque }: PropsBloque & { irABl
         <ErrorCampo id={g.idError} error={errorDe("texto")} />
       </div>
 
-      <div className="mt-3 rounded-[12px] bg-[#e9e4dc] px-4 py-4" aria-label="Así lo verá el cliente" role="figure">
+      <div className="mt-3 rounded-[12px] bg-relleno px-4 py-4" aria-label="Así lo verá el cliente" role="figure">
         <div className="max-w-[440px] rounded-[10px] rounded-tl-[2px] bg-white px-3 py-2 text-[14px] leading-[22px] whitespace-pre-wrap text-tinta shadow-[0_1px_1px_rgba(0,0,0,0.08)]">
           <ConVariables texto={texto} />
         </div>

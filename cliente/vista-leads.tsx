@@ -309,7 +309,7 @@ function LineaViva(p: {
               {frases.citaPasada} · {cuando}
             </span>
           </span>
-          <button type="button" onClick={() => abrirCierre(lead)} className={`${BOTON_LINEA} -my-0.5 bg-fondo text-tinta hover:bg-[#e2e1dd]`}>
+          <button type="button" onClick={() => abrirCierre(lead)} className={`${BOTON_LINEA} -my-0.5 bg-fondo text-tinta hover:bg-relleno`}>
             {frases.comoFueCorto}
           </button>
         </div>
@@ -362,8 +362,8 @@ function Tarjeta(p: {
   return (
     <article
       data-lead={id}
-      className={`relative rounded-[10px] border border-linea bg-white px-3 py-3 shadow-[0_1px_2px_rgba(20,20,20,0.04)] outline-2 -outline-offset-2 transition-[outline-color,border-color] duration-200 ease-out ${
-        lead ? "hover:border-[#cfcdc8]" : ""
+      className={`relative rounded-[10px] border border-linea bg-white px-3 py-3 shadow-[0_1px_2px_rgba(2,42,58,0.04)] outline-2 -outline-offset-2 transition-[outline-color,border-color] duration-200 ease-out ${
+        lead ? "hover:border-linea-fuerte" : ""
       }`}
       style={{ outlineColor: borde ?? "transparent" }}
     >

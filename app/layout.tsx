@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { DM_Mono, Inter_Tight } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { connection } from "next/server";
 import type { CSSProperties } from "react";
 import { colorTexto } from "@/lib/configuracion";
 import { configuracionParaPintar } from "@/lib/configuracion-servidor";
 import "./globals.css";
 
-const interTight = Inter_Tight({
+// Flexibility design system: Montserrat is the only typeface for all text (400–800).
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--fuente-inter",
-});
-
-const dmMono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--fuente-mono",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--fuente-montserrat",
 });
 
 const COLOR_VALIDO = /^#[0-9a-fA-F]{6}$/;
@@ -42,7 +37,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     color && COLOR_VALIDO.test(color) ? ({ "--color-marca": color, "--color-marca-texto": colorTexto(color) } as CSSProperties) : undefined;
 
   return (
-    <html lang="es" className={`${interTight.variable} ${dmMono.variable}`} style={estilo}>
+    <html lang="es" className={montserrat.variable} style={estilo}>
       <body>{children}</body>
     </html>
   );
